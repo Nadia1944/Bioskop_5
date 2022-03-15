@@ -10,3 +10,7 @@ D:\SEMESTER 6\PAPSI\SI_Bioskop\SI_Bioskop\bin\Debug\SI_Bioskop.xml
 D:\SEMESTER 6\PAPSI\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.exe
 D:\SEMESTER 6\PAPSI\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.xml
 D:\SEMESTER 6\PAPSI\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.pdb
+D:\SEMESTER 6\PAPSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\bin\Debug\SI_Bioskop.exe.config
+D:\SEMESTER 6\PAPSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.exe
+D:\SEMESTER 6\PAPSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.xml
+D:\SEMESTER 6\PAPSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.pdb
