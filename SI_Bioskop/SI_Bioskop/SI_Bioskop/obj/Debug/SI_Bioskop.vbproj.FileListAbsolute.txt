@@ -1,0 +1,12 @@
+C:\Users\NAILI AMALIA PUTRI\AppData\Local\Temporary Projects\SI_Bioskop\bin\Debug\SI_Bioskop.exe.config
+D:\SEMESTER 6\PAPSI\SI_Bioskop\SI_Bioskop\bin\Debug\SI_Bioskop.exe.config
+D:\SEMESTER 6\PAPSI\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.vbprojResolveAssemblyReference.cache
+D:\SEMESTER 6\PAPSI\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.Form1.resources
+D:\SEMESTER 6\PAPSI\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.Resources.resources
+D:\SEMESTER 6\PAPSI\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.vbproj.GenerateResource.Cache
+D:\SEMESTER 6\PAPSI\SI_Bioskop\SI_Bioskop\bin\Debug\SI_Bioskop.exe
+D:\SEMESTER 6\PAPSI\SI_Bioskop\SI_Bioskop\bin\Debug\SI_Bioskop.pdb
+D:\SEMESTER 6\PAPSI\SI_Bioskop\SI_Bioskop\bin\Debug\SI_Bioskop.xml
+D:\SEMESTER 6\PAPSI\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.exe
+D:\SEMESTER 6\PAPSI\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.xml
+D:\SEMESTER 6\PAPSI\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.pdb
