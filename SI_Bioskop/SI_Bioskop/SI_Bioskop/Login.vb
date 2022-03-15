@@ -8,6 +8,7 @@
         DM = CMD.ExecuteReader
         If DM.HasRows = True Then
             DM.Read()
+            Crew.Show()
             'MainMenu.Show()
             Me.Hide()
         Else

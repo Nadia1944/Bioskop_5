@@ -26,7 +26,6 @@ Partial Class Movie
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.jam_tayang = New System.Windows.Forms.TextBox()
         Me.studio = New System.Windows.Forms.TextBox()
-        Me.Rate = New System.Windows.Forms.TextBox()
         Me.judul = New System.Windows.Forms.TextBox()
         Me.id_movie = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -44,6 +43,7 @@ Partial Class Movie
         Me.btn_save = New System.Windows.Forms.Button()
         Me.btn_input = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.Rate = New System.Windows.Forms.ComboBox()
         Me.GroupBox1.SuspendLayout()
         CType(Me.DGV1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox3.SuspendLayout()
@@ -52,10 +52,10 @@ Partial Class Movie
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.Rate)
         Me.GroupBox1.Controls.Add(Me.DateTimePicker1)
         Me.GroupBox1.Controls.Add(Me.jam_tayang)
         Me.GroupBox1.Controls.Add(Me.studio)
-        Me.GroupBox1.Controls.Add(Me.Rate)
         Me.GroupBox1.Controls.Add(Me.judul)
         Me.GroupBox1.Controls.Add(Me.id_movie)
         Me.GroupBox1.Controls.Add(Me.Label6)
@@ -91,13 +91,6 @@ Partial Class Movie
         Me.studio.Name = "studio"
         Me.studio.Size = New System.Drawing.Size(122, 20)
         Me.studio.TabIndex = 9
-        '
-        'Rate
-        '
-        Me.Rate.Location = New System.Drawing.Point(115, 100)
-        Me.Rate.Name = "Rate"
-        Me.Rate.Size = New System.Drawing.Size(122, 20)
-        Me.Rate.TabIndex = 8
         '
         'judul
         '
@@ -253,6 +246,15 @@ Partial Class Movie
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Detail Movie"
         '
+        'Rate
+        '
+        Me.Rate.FormattingEnabled = True
+        Me.Rate.Items.AddRange(New Object() {"SU", "BO", "R", "D"})
+        Me.Rate.Location = New System.Drawing.Point(113, 100)
+        Me.Rate.Name = "Rate"
+        Me.Rate.Size = New System.Drawing.Size(124, 21)
+        Me.Rate.TabIndex = 12
+        '
         'Movie
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -283,7 +285,6 @@ Partial Class Movie
     Friend WithEvents DateTimePicker1 As DateTimePicker
     Friend WithEvents jam_tayang As TextBox
     Friend WithEvents studio As TextBox
-    Friend WithEvents Rate As TextBox
     Friend WithEvents judul As TextBox
     Friend WithEvents id_movie As TextBox
     Friend WithEvents GroupBox3 As GroupBox
@@ -294,4 +295,5 @@ Partial Class Movie
     Friend WithEvents btn_save As Button
     Friend WithEvents btn_input As Button
     Friend WithEvents GroupBox2 As GroupBox
+    Friend WithEvents Rate As ComboBox
 End Class
