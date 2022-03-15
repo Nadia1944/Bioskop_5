@@ -9,7 +9,7 @@ Module Koneksi
         Try
             Conn = New OleDbConnection("provider=microsoft.ace.oledb.12.0; data source =SI Bioskop.accdb")
             Conn.Open()
-            MsgBox("Connected")
+            'MsgBox("Connected")
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
