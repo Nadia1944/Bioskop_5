@@ -10,3 +10,16 @@ D:\SEMESTER 6\PAPSI\SI_Bioskop\SI_Bioskop\bin\Debug\SI_Bioskop.xml
 D:\SEMESTER 6\PAPSI\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.exe
 D:\SEMESTER 6\PAPSI\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.xml
 D:\SEMESTER 6\PAPSI\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.pdb
+C:\Users\ASUS\Music\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\bin\Debug\SI_Bioskop.exe.config
+C:\Users\ASUS\Music\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\bin\Debug\SI_Bioskop.exe
+C:\Users\ASUS\Music\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\bin\Debug\SI_Bioskop.pdb
+C:\Users\ASUS\Music\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\bin\Debug\SI_Bioskop.xml
+C:\Users\ASUS\Music\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.vbproj.AssemblyReference.cache
+C:\Users\ASUS\Music\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.Crew.resources
+C:\Users\ASUS\Music\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.Form1.resources
+C:\Users\ASUS\Music\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.Resources.resources
+C:\Users\ASUS\Music\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.vbproj.GenerateResource.cache
+C:\Users\ASUS\Music\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.vbproj.CoreCompileInputs.cache
+C:\Users\ASUS\Music\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.exe
+C:\Users\ASUS\Music\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.xml
+C:\Users\ASUS\Music\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.pdb
