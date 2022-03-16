@@ -23,6 +23,7 @@ Partial Class Movie
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Rate = New System.Windows.Forms.ComboBox()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.jam_tayang = New System.Windows.Forms.TextBox()
         Me.studio = New System.Windows.Forms.TextBox()
@@ -43,7 +44,9 @@ Partial Class Movie
         Me.btn_save = New System.Windows.Forms.Button()
         Me.btn_input = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.Rate = New System.Windows.Forms.ComboBox()
+        Me.lblselamat = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.lblwelcome = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         CType(Me.DGV1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox3.SuspendLayout()
@@ -64,12 +67,21 @@ Partial Class Movie
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 28)
+        Me.GroupBox1.Location = New System.Drawing.Point(12, 38)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(242, 246)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Movie"
+        '
+        'Rate
+        '
+        Me.Rate.FormattingEnabled = True
+        Me.Rate.Items.AddRange(New Object() {"SU", "BO", "R", "D"})
+        Me.Rate.Location = New System.Drawing.Point(113, 100)
+        Me.Rate.Name = "Rate"
+        Me.Rate.Size = New System.Drawing.Size(124, 21)
+        Me.Rate.TabIndex = 12
         '
         'DateTimePicker1
         '
@@ -176,7 +188,7 @@ Partial Class Movie
         Me.GroupBox3.Controls.Add(Me.btn_edit)
         Me.GroupBox3.Controls.Add(Me.btn_save)
         Me.GroupBox3.Controls.Add(Me.btn_input)
-        Me.GroupBox3.Location = New System.Drawing.Point(12, 280)
+        Me.GroupBox3.Location = New System.Drawing.Point(12, 290)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(233, 76)
         Me.GroupBox3.TabIndex = 9
@@ -239,27 +251,50 @@ Partial Class Movie
         'GroupBox2
         '
         Me.GroupBox2.Controls.Add(Me.DGV1)
-        Me.GroupBox2.Location = New System.Drawing.Point(260, 28)
+        Me.GroupBox2.Location = New System.Drawing.Point(260, 38)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(355, 328)
         Me.GroupBox2.TabIndex = 10
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Detail Movie"
         '
-        'Rate
+        'lblselamat
         '
-        Me.Rate.FormattingEnabled = True
-        Me.Rate.Items.AddRange(New Object() {"SU", "BO", "R", "D"})
-        Me.Rate.Location = New System.Drawing.Point(113, 100)
-        Me.Rate.Name = "Rate"
-        Me.Rate.Size = New System.Drawing.Size(124, 21)
-        Me.Rate.TabIndex = 12
+        Me.lblselamat.AutoSize = True
+        Me.lblselamat.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblselamat.Location = New System.Drawing.Point(168, 2)
+        Me.lblselamat.Name = "lblselamat"
+        Me.lblselamat.Size = New System.Drawing.Size(0, 33)
+        Me.lblselamat.TabIndex = 61
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(18, 2)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(144, 33)
+        Me.Label7.TabIndex = 60
+        Me.Label7.Text = "Welcome"
+        '
+        'lblwelcome
+        '
+        Me.lblwelcome.AutoSize = True
+        Me.lblwelcome.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblwelcome.Location = New System.Drawing.Point(152, 2)
+        Me.lblwelcome.Name = "lblwelcome"
+        Me.lblwelcome.Size = New System.Drawing.Size(144, 33)
+        Me.lblwelcome.TabIndex = 62
+        Me.lblwelcome.Text = "Welcome"
         '
         'Movie
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(627, 374)
+        Me.Controls.Add(Me.lblwelcome)
+        Me.Controls.Add(Me.lblselamat)
+        Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox1)
@@ -271,6 +306,7 @@ Partial Class Movie
         Me.GroupBox3.ResumeLayout(False)
         Me.GroupBox2.ResumeLayout(False)
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -296,4 +332,7 @@ Partial Class Movie
     Friend WithEvents btn_input As Button
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents Rate As ComboBox
+    Friend WithEvents lblselamat As Label
+    Friend WithEvents Label7 As Label
+    Friend WithEvents lblwelcome As Label
 End Class

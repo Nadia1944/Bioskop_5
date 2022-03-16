@@ -56,6 +56,8 @@ Partial Class Crew
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.OpenFile1 = New System.Windows.Forms.OpenFileDialog()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.lblselamat = New System.Windows.Forms.Label()
+        Me.Label13 = New System.Windows.Forms.Label()
         CType(Me.DGV2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -371,11 +373,32 @@ Partial Class Crew
         Me.Label1.TabIndex = 58
         Me.Label1.Text = "Welcome"
         '
+        'lblselamat
+        '
+        Me.lblselamat.AutoSize = True
+        Me.lblselamat.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblselamat.Location = New System.Drawing.Point(194, 9)
+        Me.lblselamat.Name = "lblselamat"
+        Me.lblselamat.Size = New System.Drawing.Size(0, 33)
+        Me.lblselamat.TabIndex = 59
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.Location = New System.Drawing.Point(182, 9)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(144, 33)
+        Me.Label13.TabIndex = 60
+        Me.Label13.Text = "Welcome"
+        '
         'Crew
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(757, 587)
+        Me.Controls.Add(Me.Label13)
+        Me.Controls.Add(Me.lblselamat)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.foto_diri)
         Me.Controls.Add(Me.Label11)
@@ -432,4 +455,6 @@ Partial Class Crew
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents OpenFile1 As OpenFileDialog
     Friend WithEvents Label1 As Label
+    Friend WithEvents lblselamat As Label
+    Friend WithEvents Label13 As Label
 End Class

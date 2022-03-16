@@ -15,6 +15,8 @@
             MsgBox(" Maaf Username atau Password Anda Salah ")
             Me.Show()
         End If
+        Crew.Label13.Text = txtUN.Text
+        Movie.lblwelcome.Text = txtUN.Text
     End Sub
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
