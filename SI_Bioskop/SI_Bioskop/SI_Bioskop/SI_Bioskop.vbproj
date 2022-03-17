@@ -81,6 +81,12 @@
     <Compile Include="Crew.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Customer.Designer.vb">
+      <DependentUpon>Customer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Customer.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +95,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Koneksi.vb" />
+    <Compile Include="Kursi.Designer.vb">
+      <DependentUpon>Kursi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Kursi.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Login.Designer.vb">
       <DependentUpon>Login.vb</DependentUpon>
     </Compile>
@@ -128,8 +140,14 @@
     <EmbeddedResource Include="Crew.resx">
       <DependentUpon>Crew.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Customer.resx">
+      <DependentUpon>Customer.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kursi.resx">
+      <DependentUpon>Kursi.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
