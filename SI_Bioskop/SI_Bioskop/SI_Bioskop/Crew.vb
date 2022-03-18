@@ -195,4 +195,48 @@ Public Class Crew
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
         Me.Close()
     End Sub
+
+    Private Sub btn_caridata_Click(sender As Object, e As EventArgs) Handles btn_caridata.Click
+        Call HidupkanForm()
+        Dim pegawai = InputBox("Silahkan Masukan ID Crew")
+        Try
+            DS.Tables(0).PrimaryKey = New DataColumn() {DS.Tables(0).Columns("ID_Crew")}
+
+            Dim row As DataRow
+            row = DS.Tables(0).Rows.Find(pegawai)
+            id_crew.Text = row("ID_Crew")
+            nama_crew.Text = row("Nama_Crew")
+            tempat_lahir.Text = row("Tempat_Lahir")
+            DateTimePicker1.Text = row("Tanggal_Lahir")
+            jenis_kelamin.Text = row("Jenis_Kelamin")
+            agama.Text = row("Agama")
+            no_hp.Text = row("No_Telepon")
+            alamat.Text = row("Alamat")
+            status.Text = row("Status")
+            foto_diri.Text = row("Photo")
+
+            Refresh()
+
+            MsgBox("Pencarian Sukses!")
+            Refresh()
+
+        Catch ex As Exception
+            MsgBox("Anda Salah Memasukkan ID Crew / ID Crew Tersebut Belum Terdaftar!")
+        End Try
+    End Sub
+
+    Private Sub btn_cari_Click(sender As Object, e As EventArgs) Handles btn_cari.Click
+        Call koneksiDB()
+
+        DA = New OleDb.OleDbDataAdapter("SELECT * from Crew where
+        ID_Crew like '%" & cari.Text.Replace("'", "''") & "%' or Nama_Crew 
+        like '%" & cari.Text.Replace("'", "''") & "%' or Alamat like '%" &
+        cari.Text.Replace("'", "''") & "%' ", Conn)
+
+        DS = New DataSet
+        Dim SRT As New DataTable
+        SRT.Clear()
+        DA.Fill(SRT)
+        DGV2.DataSource = SRT
+    End Sub
 End Class
