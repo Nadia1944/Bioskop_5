@@ -45,3 +45,5 @@ D:\SEMESTER 6\PAPSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bios
 D:\SEMESTER 6\PAPSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.Resources.resources
 D:\SEMESTER 6\PAPSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.Ticket.resources
 D:\SEMESTER 6\PAPSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.vbproj.GenerateResource.Cache
+C:\Users\ASUS\Music\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.Customer.resources
+C:\Users\ASUS\Music\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.Kursi.resources
