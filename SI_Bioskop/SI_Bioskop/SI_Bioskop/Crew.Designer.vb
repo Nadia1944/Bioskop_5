@@ -28,6 +28,7 @@ Partial Class Crew
         Me.btn_simpan = New System.Windows.Forms.Button()
         Me.btn_delete = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btn_caridata = New System.Windows.Forms.Button()
         Me.btn_edit = New System.Windows.Forms.Button()
         Me.btn_input = New System.Windows.Forms.Button()
         Me.umur_crew = New System.Windows.Forms.TextBox()
@@ -55,9 +56,11 @@ Partial Class Crew
         Me.btn_browse = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.OpenFile1 = New System.Windows.Forms.OpenFileDialog()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.lblselamat = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.cari = New System.Windows.Forms.TextBox()
+        Me.btn_cari = New System.Windows.Forms.Button()
         CType(Me.DGV2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -74,7 +77,7 @@ Partial Class Crew
         '
         'btnCancel
         '
-        Me.btnCancel.Location = New System.Drawing.Point(544, 375)
+        Me.btnCancel.Location = New System.Drawing.Point(542, 361)
         Me.btnCancel.Name = "btnCancel"
         Me.btnCancel.Size = New System.Drawing.Size(73, 31)
         Me.btnCancel.TabIndex = 52
@@ -92,7 +95,7 @@ Partial Class Crew
         '
         'btn_simpan
         '
-        Me.btn_simpan.Location = New System.Drawing.Point(464, 374)
+        Me.btn_simpan.Location = New System.Drawing.Point(442, 361)
         Me.btn_simpan.Name = "btn_simpan"
         Me.btn_simpan.Size = New System.Drawing.Size(73, 31)
         Me.btn_simpan.TabIndex = 50
@@ -101,7 +104,7 @@ Partial Class Crew
         '
         'btn_delete
         '
-        Me.btn_delete.Location = New System.Drawing.Point(623, 376)
+        Me.btn_delete.Location = New System.Drawing.Point(630, 361)
         Me.btn_delete.Name = "btn_delete"
         Me.btn_delete.Size = New System.Drawing.Size(73, 31)
         Me.btn_delete.TabIndex = 49
@@ -110,6 +113,7 @@ Partial Class Crew
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.btn_caridata)
         Me.GroupBox1.Controls.Add(Me.btn_edit)
         Me.GroupBox1.Controls.Add(Me.btn_input)
         Me.GroupBox1.Controls.Add(Me.umur_crew)
@@ -138,6 +142,15 @@ Partial Class Crew
         Me.GroupBox1.TabIndex = 48
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Data Crew Ticketing"
+        '
+        'btn_caridata
+        '
+        Me.btn_caridata.Location = New System.Drawing.Point(265, 27)
+        Me.btn_caridata.Name = "btn_caridata"
+        Me.btn_caridata.Size = New System.Drawing.Size(75, 23)
+        Me.btn_caridata.TabIndex = 61
+        Me.btn_caridata.Text = "Cari Data "
+        Me.btn_caridata.UseVisualStyleBackColor = True
         '
         'btn_edit
         '
@@ -327,7 +340,7 @@ Partial Class Crew
         '
         'foto_diri
         '
-        Me.foto_diri.Location = New System.Drawing.Point(539, 346)
+        Me.foto_diri.Location = New System.Drawing.Point(542, 335)
         Me.foto_diri.Name = "foto_diri"
         Me.foto_diri.Size = New System.Drawing.Size(161, 20)
         Me.foto_diri.TabIndex = 57
@@ -335,7 +348,7 @@ Partial Class Crew
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(439, 346)
+        Me.Label11.Location = New System.Drawing.Point(439, 338)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(52, 13)
         Me.Label11.TabIndex = 56
@@ -343,7 +356,7 @@ Partial Class Crew
         '
         'btn_browse
         '
-        Me.btn_browse.Location = New System.Drawing.Point(624, 309)
+        Me.btn_browse.Location = New System.Drawing.Point(627, 298)
         Me.btn_browse.Name = "btn_browse"
         Me.btn_browse.Size = New System.Drawing.Size(76, 31)
         Me.btn_browse.TabIndex = 55
@@ -352,7 +365,7 @@ Partial Class Crew
         '
         'PictureBox1
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(442, 65)
+        Me.PictureBox1.Location = New System.Drawing.Point(442, 48)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(254, 237)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
@@ -362,16 +375,6 @@ Partial Class Crew
         'OpenFile1
         '
         Me.OpenFile1.FileName = "OpenFileDialog1"
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(44, 9)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(144, 33)
-        Me.Label1.TabIndex = 58
-        Me.Label1.Text = "Welcome"
         '
         'lblselamat
         '
@@ -385,21 +388,49 @@ Partial Class Crew
         'Label13
         '
         Me.Label13.AutoSize = True
-        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(182, 9)
+        Me.Label13.Font = New System.Drawing.Font("Modern No. 20", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.Location = New System.Drawing.Point(166, 9)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(144, 33)
+        Me.Label13.Size = New System.Drawing.Size(114, 29)
         Me.Label13.TabIndex = 60
         Me.Label13.Text = "Welcome"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Modern No. 20", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(46, 9)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(114, 29)
+        Me.Label1.TabIndex = 61
+        Me.Label1.Text = "Welcome"
+        '
+        'cari
+        '
+        Me.cari.Location = New System.Drawing.Point(440, 407)
+        Me.cari.Name = "cari"
+        Me.cari.Size = New System.Drawing.Size(175, 20)
+        Me.cari.TabIndex = 62
+        '
+        'btn_cari
+        '
+        Me.btn_cari.Location = New System.Drawing.Point(630, 401)
+        Me.btn_cari.Name = "btn_cari"
+        Me.btn_cari.Size = New System.Drawing.Size(75, 31)
+        Me.btn_cari.TabIndex = 63
+        Me.btn_cari.Text = "Cari"
+        Me.btn_cari.UseVisualStyleBackColor = True
         '
         'Crew
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(757, 587)
+        Me.Controls.Add(Me.btn_cari)
+        Me.Controls.Add(Me.cari)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.lblselamat)
-        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.foto_diri)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.btn_browse)
@@ -454,7 +485,10 @@ Partial Class Crew
     Friend WithEvents btn_browse As Button
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents OpenFile1 As OpenFileDialog
-    Friend WithEvents Label1 As Label
     Friend WithEvents lblselamat As Label
     Friend WithEvents Label13 As Label
+    Friend WithEvents btn_caridata As Button
+    Friend WithEvents Label1 As Label
+    Friend WithEvents cari As TextBox
+    Friend WithEvents btn_cari As Button
 End Class

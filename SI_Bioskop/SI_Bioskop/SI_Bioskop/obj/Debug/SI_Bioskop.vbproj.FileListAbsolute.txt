@@ -45,5 +45,39 @@ D:\SEMESTER 6\PAPSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bios
 D:\SEMESTER 6\PAPSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.Resources.resources
 D:\SEMESTER 6\PAPSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.Ticket.resources
 D:\SEMESTER 6\PAPSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.vbproj.GenerateResource.Cache
-C:\Users\ASUS\Music\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.Customer.resources
-C:\Users\ASUS\Music\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.Kursi.resources
+C:\Users\Anggis\Documents\S M T R  6 ! !\Prak APSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\bin\Debug\SI_Bioskop.exe
+C:\Users\Anggis\Documents\S M T R  6 ! !\Prak APSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\bin\Debug\SI_Bioskop.pdb
+C:\Users\Anggis\Documents\S M T R  6 ! !\Prak APSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\bin\Debug\SI_Bioskop.xml
+C:\Users\Anggis\Documents\S M T R  6 ! !\Prak APSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.vbprojResolveAssemblyReference.cache
+C:\Users\Anggis\Documents\S M T R  6 ! !\Prak APSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.Crew.resources
+C:\Users\Anggis\Documents\S M T R  6 ! !\Prak APSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.Customer.resources
+C:\Users\Anggis\Documents\S M T R  6 ! !\Prak APSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.Form1.resources
+C:\Users\Anggis\Documents\S M T R  6 ! !\Prak APSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.Kursi.resources
+C:\Users\Anggis\Documents\S M T R  6 ! !\Prak APSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.Login.resources
+C:\Users\Anggis\Documents\S M T R  6 ! !\Prak APSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.Movie.resources
+C:\Users\Anggis\Documents\S M T R  6 ! !\Prak APSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.Resources.resources
+C:\Users\Anggis\Documents\S M T R  6 ! !\Prak APSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.Ticket.resources
+C:\Users\Anggis\Documents\S M T R  6 ! !\Prak APSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.vbproj.GenerateResource.Cache
+D:\SEMESTER 6\PAPSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.Customer.resources
+D:\SEMESTER 6\PAPSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.Kursi.resources
+D:\SEMESTER 6\PAPSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.Main_Menu.resources
+D:\SEMESTER 6\PAPSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\bin\Debug\AxShockwaveFlashObjects.dll
+D:\SEMESTER 6\PAPSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+D:\SEMESTER 6\PAPSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\bin\Debug\CrystalDecisions.ReportSource.dll
+D:\SEMESTER 6\PAPSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\bin\Debug\CrystalDecisions.Shared.dll
+D:\SEMESTER 6\PAPSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\bin\Debug\CrystalDecisions.Windows.Forms.dll
+D:\SEMESTER 6\PAPSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\bin\Debug\ShockwaveFlashObjects.dll
+D:\SEMESTER 6\PAPSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+D:\SEMESTER 6\PAPSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+D:\SEMESTER 6\PAPSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+D:\SEMESTER 6\PAPSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+D:\SEMESTER 6\PAPSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+D:\SEMESTER 6\PAPSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+D:\SEMESTER 6\PAPSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+D:\SEMESTER 6\PAPSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+D:\SEMESTER 6\PAPSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+D:\SEMESTER 6\PAPSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+D:\SEMESTER 6\PAPSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+D:\SEMESTER 6\PAPSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\bin\Debug\stdole.dll
+D:\SEMESTER 6\PAPSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+D:\SEMESTER 6\PAPSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.Form_Report_Movie.resources

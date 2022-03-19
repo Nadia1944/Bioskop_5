@@ -47,6 +47,7 @@ Partial Class Movie
         Me.lblselamat = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.lblwelcome = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         CType(Me.DGV1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox3.SuspendLayout()
@@ -273,25 +274,35 @@ Partial Class Movie
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.Location = New System.Drawing.Point(18, 2)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(144, 33)
+        Me.Label7.Size = New System.Drawing.Size(0, 33)
         Me.Label7.TabIndex = 60
-        Me.Label7.Text = "Welcome"
         '
         'lblwelcome
         '
         Me.lblwelcome.AutoSize = True
-        Me.lblwelcome.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblwelcome.Location = New System.Drawing.Point(152, 2)
+        Me.lblwelcome.Font = New System.Drawing.Font("Modern No. 20", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblwelcome.Location = New System.Drawing.Point(131, 2)
         Me.lblwelcome.Name = "lblwelcome"
-        Me.lblwelcome.Size = New System.Drawing.Size(144, 33)
+        Me.lblwelcome.Size = New System.Drawing.Size(114, 29)
         Me.lblwelcome.TabIndex = 62
         Me.lblwelcome.Text = "Welcome"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Modern No. 20", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(12, 2)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(114, 29)
+        Me.Label8.TabIndex = 63
+        Me.Label8.Text = "Welcome"
         '
         'Movie
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(627, 374)
+        Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.lblwelcome)
         Me.Controls.Add(Me.lblselamat)
         Me.Controls.Add(Me.Label7)
@@ -335,4 +346,5 @@ Partial Class Movie
     Friend WithEvents lblselamat As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents lblwelcome As Label
+    Friend WithEvents Label8 As Label
 End Class
