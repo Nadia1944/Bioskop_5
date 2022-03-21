@@ -229,7 +229,7 @@ Public Class Crew
     Private Sub btn_cari_Click(sender As Object, e As EventArgs) Handles btn_cari.Click
         Call koneksiDB()
 
-        DA = New OleDb.OleDbDataAdapter("SELECT * from Crew where
+        DA = New OleDb.OleDbDataAdapter("SELECT * from Crew_Ticketing where
         ID_Crew like '%" & cari.Text.Replace("'", "''") & "%' or Nama_Crew 
         like '%" & cari.Text.Replace("'", "''") & "%' or Alamat like '%" &
         cari.Text.Replace("'", "''") & "%' ", Conn)

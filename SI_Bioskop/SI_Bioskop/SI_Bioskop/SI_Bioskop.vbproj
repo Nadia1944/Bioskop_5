@@ -142,6 +142,12 @@
     <Compile Include="Customer.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Form Report Data Crew.Designer.vb">
+      <DependentUpon>Form Report Data Crew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form Report Data Crew.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form Report Movie.Designer.vb">
       <DependentUpon>Form Report Movie.vb</DependentUpon>
     </Compile>
@@ -196,6 +202,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Report Data Crew.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report Data Crew.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Report Movie.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -215,6 +227,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Customer.resx">
       <DependentUpon>Customer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Report Data Crew.resx">
+      <DependentUpon>Form Report Data Crew.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form Report Movie.resx">
       <DependentUpon>Form Report Movie.vb</DependentUpon>
@@ -239,6 +254,10 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report Data Crew.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report Data Crew.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Report Movie.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
