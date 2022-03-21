@@ -99,7 +99,9 @@ C:\Users\ASUS\Music\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\bin\Debug\Crystal
 C:\Users\ASUS\Music\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
 C:\Users\ASUS\Music\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\bin\Debug\stdole.dll
 C:\Users\ASUS\Music\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
-C:\Users\ASUS\Music\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\bin\Debug\bin\Debug\SI Bioskop.accdb
-C:\Users\ASUS\Music\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\bin\Debug\bin\x64\Debug\SI Bioskop.accdb
-C:\Users\ASUS\Music\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\bin\Debug\bin\x86\Debug\SI Bioskop.accdb
 C:\Users\ASUS\Music\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.vbproj.CopyComplete
+C:\Users\ASUS\Music\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\bin\Debug\AxShockwaveFlashObjects.dll
+C:\Users\ASUS\Music\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\ASUS\Music\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Users\ASUS\Music\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\bin\Debug\CrystalDecisions.Shared.dll
+C:\Users\ASUS\Music\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\bin\Debug\CrystalDecisions.Windows.Forms.dll

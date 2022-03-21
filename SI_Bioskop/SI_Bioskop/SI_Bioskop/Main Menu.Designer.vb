@@ -91,13 +91,13 @@ Partial Class Main_Menu
         'ReceiptToolStripMenuItem1
         '
         Me.ReceiptToolStripMenuItem1.Name = "ReceiptToolStripMenuItem1"
-        Me.ReceiptToolStripMenuItem1.Size = New System.Drawing.Size(152, 24)
+        Me.ReceiptToolStripMenuItem1.Size = New System.Drawing.Size(142, 24)
         Me.ReceiptToolStripMenuItem1.Text = "Receipt"
         '
         'TicketToolStripMenuItem
         '
         Me.TicketToolStripMenuItem.Name = "TicketToolStripMenuItem"
-        Me.TicketToolStripMenuItem.Size = New System.Drawing.Size(152, 24)
+        Me.TicketToolStripMenuItem.Size = New System.Drawing.Size(142, 24)
         Me.TicketToolStripMenuItem.Text = "Ticket"
         '
         'Label1
