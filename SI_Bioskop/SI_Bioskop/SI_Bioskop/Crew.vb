@@ -141,6 +141,7 @@ Public Class Crew
         nama_crew.Text = DGV2.Rows(e.RowIndex).Cells(1).Value
         tempat_lahir.Text = DGV2.Rows(e.RowIndex).Cells(2).Value
         DateTimePicker1.Value = DGV2.Rows(e.RowIndex).Cells(3).Value
+        DateTimePicker1.CustomFormat = "dddd, dd/MM/yyyy"
         umur_crew.Text = DGV2.Rows(e.RowIndex).Cells(4).Value
         jenis_kelamin.Text = DGV2.Rows(e.RowIndex).Cells(5).Value
         agama.Text = DGV2.Rows(e.RowIndex).Cells(6).Value
