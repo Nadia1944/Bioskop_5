@@ -211,10 +211,10 @@ Public Class Crew
             DateTimePicker1.Text = row("Tanggal_Lahir")
             jenis_kelamin.Text = row("Jenis_Kelamin")
             agama.Text = row("Agama")
-            no_hp.Text = row("No_Telepon")
+            no_hp.Text = row("No_Hp")
             alamat.Text = row("Alamat")
             status.Text = row("Status")
-            foto_diri.Text = row("Photo")
+            foto_diri.Text = row("Foto")
 
             Refresh()
 
