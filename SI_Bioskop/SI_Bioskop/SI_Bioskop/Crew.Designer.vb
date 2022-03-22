@@ -389,7 +389,7 @@ Partial Class Crew
         '
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Modern No. 20", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(166, 9)
+        Me.Label13.Location = New System.Drawing.Point(150, 9)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(114, 29)
         Me.Label13.TabIndex = 60
