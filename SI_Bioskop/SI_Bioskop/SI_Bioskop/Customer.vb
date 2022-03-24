@@ -38,7 +38,7 @@
     End Sub
 
     Private Sub btn_save_Click(sender As Object, e As EventArgs) Handles btn_save.Click
-        If txt_idcustomer.Text = "" Or txt_namacustomer.Text = "" Or txt_hp.Text = "" Or cmb_jk.Text = "" Or txt_alamat.Text = "" Then
+        If txt_idcustomer.Text = "" Or txt_namacustomer.Text = "" Or cmb_jk.Text = "" Or txt_hp.Text = "" Or txt_alamat.Text = "" Then
             MsgBox("Data Customer Belum Lengkap")
             Exit Sub
         Else
@@ -50,7 +50,7 @@
                 Call koneksiDB()
                 Dim simpan As String
                 simpan = "insert into Customer values ('" & txt_idcustomer.Text &
-               "', '" & txt_namacustomer.Text & "', '" & txt_hp.Text & "', '" & cmb_jk.Text & "', '" & txt_alamat.Text & "')"
+               "', '" & txt_namacustomer.Text & "',  '" & cmb_jk.Text & "', '" & txt_hp.Text & "', '" & txt_alamat.Text & "')"
                 CMD = New OleDb.OleDbCommand(simpan, Conn)
                 CMD.ExecuteNonQuery()
                 MsgBox("Input Data Sukses")
@@ -64,13 +64,13 @@
     End Sub
 
     Private Sub btn_edit_Click(sender As Object, e As EventArgs) Handles btn_edit.Click
-        If txt_idcustomer.Text = "" Or txt_namacustomer.Text = "" Or txt_hp.Text = "" Or cmb_jk.Text = "" Or txt_alamat.Text = "" Then
+        If txt_idcustomer.Text = "" Or txt_namacustomer.Text = "" Or cmb_jk.Text = "" Or txt_hp.Text = "" Or txt_alamat.Text = "" Then
             MsgBox("Data Customer Belum Lengkap")
             Exit Sub
         Else
             Call koneksiDB()
             CMD = New OleDb.OleDbCommand("update Customer set Nama_Customer = '" &
-           txt_namacustomer.Text & "', No_Hp = '" & txt_hp.Text & "', Jenis_Kelamin = '" & cmb_jk.Text & "', Alamat ='" &
+           txt_namacustomer.Text & "', Jenis_Kelamin = '" & cmb_jk.Text & "', No_Hp = '" & txt_hp.Text & "', Alamat ='" &
            txt_alamat.Text & "' where ID_Customer ='" & txt_idcustomer.Text & "'", Conn)
             DM = CMD.ExecuteReader
             MsgBox("Update Data Berhasil")
@@ -84,6 +84,19 @@
         If txt_idcustomer.Text = "" Then
             MsgBox("Tidak ada data yang dipilih")
             Exit Sub
+        Else
+            If MessageBox.Show(" Are you sure to delete this data?", "Konfirmasi", MessageBoxButtons.YesNoCancel) Then
+                Call koneksiDB()
+                CMD = New OleDb.OleDbCommand(" delete from Customer where ID_Customer = '" & txt_idcustomer.Text & "'", Conn)
+                DM = CMD.ExecuteReader
+                MsgBox("Data Berhasil Dihapus")
+                Call MatikanForm()
+                Call KosongkanForm()
+                Call TampilkanData()
+            Else
+                Call KosongkanForm()
+                Call TampilkanData()
+            End If
         End If
     End Sub
 
