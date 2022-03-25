@@ -25,7 +25,6 @@ Partial Class Movie
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Rate = New System.Windows.Forms.ComboBox()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
-        Me.jam_tayang = New System.Windows.Forms.TextBox()
         Me.studio = New System.Windows.Forms.TextBox()
         Me.judul = New System.Windows.Forms.TextBox()
         Me.id_movie = New System.Windows.Forms.TextBox()
@@ -48,6 +47,7 @@ Partial Class Movie
         Me.Label7 = New System.Windows.Forms.Label()
         Me.lblwelcome = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
+        Me.jam_tayang = New System.Windows.Forms.DateTimePicker()
         Me.GroupBox1.SuspendLayout()
         CType(Me.DGV1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox3.SuspendLayout()
@@ -56,9 +56,9 @@ Partial Class Movie
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.jam_tayang)
         Me.GroupBox1.Controls.Add(Me.Rate)
         Me.GroupBox1.Controls.Add(Me.DateTimePicker1)
-        Me.GroupBox1.Controls.Add(Me.jam_tayang)
         Me.GroupBox1.Controls.Add(Me.studio)
         Me.GroupBox1.Controls.Add(Me.judul)
         Me.GroupBox1.Controls.Add(Me.id_movie)
@@ -90,13 +90,6 @@ Partial Class Movie
         Me.DateTimePicker1.Name = "DateTimePicker1"
         Me.DateTimePicker1.Size = New System.Drawing.Size(123, 20)
         Me.DateTimePicker1.TabIndex = 11
-        '
-        'jam_tayang
-        '
-        Me.jam_tayang.Location = New System.Drawing.Point(113, 200)
-        Me.jam_tayang.Name = "jam_tayang"
-        Me.jam_tayang.Size = New System.Drawing.Size(122, 20)
-        Me.jam_tayang.TabIndex = 10
         '
         'studio
         '
@@ -297,6 +290,17 @@ Partial Class Movie
         Me.Label8.TabIndex = 63
         Me.Label8.Text = "Welcome"
         '
+        'jam_tayang
+        '
+        Me.jam_tayang.CustomFormat = "hh:mm:ss"
+        Me.jam_tayang.Format = System.Windows.Forms.DateTimePickerFormat.Time
+        Me.jam_tayang.Location = New System.Drawing.Point(113, 197)
+        Me.jam_tayang.Name = "jam_tayang"
+        Me.jam_tayang.ShowUpDown = True
+        Me.jam_tayang.Size = New System.Drawing.Size(123, 20)
+        Me.jam_tayang.TabIndex = 13
+        Me.jam_tayang.Value = New Date(2022, 3, 25, 21, 59, 0, 0)
+        '
         'Movie
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -330,7 +334,6 @@ Partial Class Movie
     Friend WithEvents Label1 As Label
     Friend WithEvents DGV1 As DataGridView
     Friend WithEvents DateTimePicker1 As DateTimePicker
-    Friend WithEvents jam_tayang As TextBox
     Friend WithEvents studio As TextBox
     Friend WithEvents judul As TextBox
     Friend WithEvents id_movie As TextBox
@@ -347,4 +350,5 @@ Partial Class Movie
     Friend WithEvents Label7 As Label
     Friend WithEvents lblwelcome As Label
     Friend WithEvents Label8 As Label
+    Friend WithEvents jam_tayang As DateTimePicker
 End Class
