@@ -162,7 +162,7 @@ Public Class Crew
         PictureBox1.ImageLocation = OpenFile1.FileName
         foto_diri.Text = OpenFile1.FileName
     End Sub
-    Private Sub id_kasir_TextChanged(sender As Object, e As EventArgs) Handles id_crew.TextChanged
+    Private Sub txtid_crew_TextChanged(sender As Object, e As EventArgs) Handles id_crew.TextChanged
         Try
             Call koneksiDB()
             CMD = New OleDb.OleDbCommand(" select * from Crew_Ticketing where ID_Crew ='" & id_crew.Text & "'", Conn)

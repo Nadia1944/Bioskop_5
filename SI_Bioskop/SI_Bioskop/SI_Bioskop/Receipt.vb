@@ -14,7 +14,7 @@
                 MsgBox("ID Movie Tidak Ada")
             Else
                 txt_IdMovie.Text = DM.Item("ID_Movie")
-                txtjudul.Text = DM.Item("Nama")
+                txtjudul.Text = DM.Item("Judul_Movie")
                 txtharga.Text = DM.Item("Harga")
                 txtjumlah.Enabled = True
                 txtjumlah.Focus()
@@ -87,7 +87,7 @@
         txtidreceipt.Text = urutankode
         Dim BR_Generator As New MessagingToolkit.Barcode.BarcodeEncoder
         BR_Generator.IncludeLabel = True
-        BR_Generator.CustomLabel = txtkodestruk.Text
+        BR_Generator.CustomLabel = txtidreceipt.Text
         Try
             PictureBox1.Image = BR_Generator.Encode(MessagingToolkit.Barcode.BarcodeFormat.Code128, txtidreceipt.Text)
             'PictureBox1.Image = New Bitmap(BR_Generator.Encode(MessagingToolkit.Barcode.BarcodeFormat.ISBN, TextBox2.Text))
@@ -147,8 +147,8 @@ txtidreceipt.Text & "', '" & txtidcustomer.Text & "', '" & txtGrandtotal.Text & 
                 DataGridView1.Rows(baris).Cells(1).Value & "', '" &
                 DataGridView1.Rows(baris).Cells(2).Value & "', '" &
                 DataGridView1.Rows(baris).Cells(3).Value & "','" &
-                DataGridView1.Rows(baris).Cells(4).Value & "'," &
-                GetRandom(1111, 99999).ToString() & ")"
+                DataGridView1.Rows(baris).Cells(4).Value '& "'," &
+                ' GetRandom(1111, 99999).ToString() & ")"
                 CMD = New OleDb.OleDbCommand(Simpandetail, Conn)
                 CMD.ExecuteNonQuery()
 
@@ -169,8 +169,8 @@ txtidreceipt.Text & "', '" & txtidcustomer.Text & "', '" & txtGrandtotal.Text & 
             Nomorfakturotomatis()
 
         End If
-        Nota_Struk.Report_Nota_Struk1.SetParameterValue("Kode_Struk", txtidreceipt.Text)
-        Nota_Struk.Show()
+        'Receipt.Report_Nota_Struk1.SetParameterValue("ID_Receipt", txtidreceipt.Text)
+        'Receipt.Show()
     End Sub
     Sub carijumlahitem()
         Dim hitungitem As Integer = 0
@@ -180,11 +180,39 @@ txtidreceipt.Text & "', '" & txtidcustomer.Text & "', '" & txtGrandtotal.Text & 
         Next
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Btnhitung_Click(sender As Object, e As EventArgs) Handles btnhitung.Click
         Dim Total_Akhir As Integer
         Dim Hitung As Integer
         Total_Akhir = Val(txtGrandtotal.Text)
         txtGrandtotal.Text = Total_Akhir
         Hitung = Val(txtsubtotal.Text)
+    End Sub
+
+    Private Sub txtidcrew_TextChanged(sender As Object, e As EventArgs) Handles txtidcrew.TextChanged
+        Try
+            Call koneksiDB()
+            CMD = New OleDb.OleDbCommand(" select * from Crew where 
+id_crew ='" & txtidcrew.Text & "'", Conn)
+            DM = CMD.ExecuteReader
+            'DM.Read()
+            If DM.HasRows = True Then
+                DM.Read()
+                'Dim row As DataRow
+                'row = DS.Tables(0).Rows.Find(Crew)
+                txtidcrew.Text = DM.Item("ID_crew")
+                txtcrew.Text = DM.Item("Nama_Crew")
+                'txttempatlahirkaryawan.Text = DM.Item("tempat_lahir")
+                ' DateTimePicker1.Text = DM.Item("tgl_lahir")
+                ' listjkkaryawan.Text = DM.Item("Jenis_Kelamin")
+                ' lstagamakar.Text = DM.Item("agama")
+                ' txttelpkaryawan.Text = DM.Item("no_telp")
+                ' txtalamatkaryawan.Text = DM.Item("alamat")
+                '  lststatuskaryawan.Text = DM.Item("status")
+                ' txtnamaphotokaryawan.Text = DM.Item("photo")
+                '  PictureBox1.ImageLocation = Replace((DM("photo")), ";", "\")
+            End If
+        Catch ex As Exception
+            MsgBox(ex.ToString())
+        End Try
     End Sub
 End Class

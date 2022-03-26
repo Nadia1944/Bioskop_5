@@ -32,6 +32,10 @@ Partial Class Main_Menu
         Me.TransaksiToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReceiptToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.TicketToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.QRCodeToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.QRCodeGeneratorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.QRReaderPictureToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.QRCodeWebcamToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btn_exit = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
@@ -41,7 +45,7 @@ Partial Class Main_Menu
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.InputDataToolStripMenuItem, Me.TransaksiToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.InputDataToolStripMenuItem, Me.TransaksiToolStripMenuItem, Me.QRCodeToolStripMenuItem1})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(705, 27)
@@ -99,6 +103,32 @@ Partial Class Main_Menu
         Me.TicketToolStripMenuItem.Name = "TicketToolStripMenuItem"
         Me.TicketToolStripMenuItem.Size = New System.Drawing.Size(142, 24)
         Me.TicketToolStripMenuItem.Text = "Ticket"
+        '
+        'QRCodeToolStripMenuItem1
+        '
+        Me.QRCodeToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.QRCodeGeneratorToolStripMenuItem, Me.QRReaderPictureToolStripMenuItem, Me.QRCodeWebcamToolStripMenuItem})
+        Me.QRCodeToolStripMenuItem1.Font = New System.Drawing.Font("Century Schoolbook", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.QRCodeToolStripMenuItem1.Name = "QRCodeToolStripMenuItem1"
+        Me.QRCodeToolStripMenuItem1.Size = New System.Drawing.Size(94, 23)
+        Me.QRCodeToolStripMenuItem1.Text = "QR Code"
+        '
+        'QRCodeGeneratorToolStripMenuItem
+        '
+        Me.QRCodeGeneratorToolStripMenuItem.Name = "QRCodeGeneratorToolStripMenuItem"
+        Me.QRCodeGeneratorToolStripMenuItem.Size = New System.Drawing.Size(241, 24)
+        Me.QRCodeGeneratorToolStripMenuItem.Text = "QR Code Generator"
+        '
+        'QRReaderPictureToolStripMenuItem
+        '
+        Me.QRReaderPictureToolStripMenuItem.Name = "QRReaderPictureToolStripMenuItem"
+        Me.QRReaderPictureToolStripMenuItem.Size = New System.Drawing.Size(241, 24)
+        Me.QRReaderPictureToolStripMenuItem.Text = "Scan Reader"
+        '
+        'QRCodeWebcamToolStripMenuItem
+        '
+        Me.QRCodeWebcamToolStripMenuItem.Name = "QRCodeWebcamToolStripMenuItem"
+        Me.QRCodeWebcamToolStripMenuItem.Size = New System.Drawing.Size(241, 24)
+        Me.QRCodeWebcamToolStripMenuItem.Text = "BCQR Reader"
         '
         'Label1
         '
@@ -163,4 +193,8 @@ Partial Class Main_Menu
     Friend WithEvents btn_exit As Button
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents DataKursiToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents QRCodeToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents QRCodeGeneratorToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents QRReaderPictureToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents QRCodeWebcamToolStripMenuItem As ToolStripMenuItem
 End Class

@@ -22,6 +22,7 @@ Partial Class Receipt
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.txtnamacustomer = New System.Windows.Forms.TextBox()
         Me.Label16 = New System.Windows.Forms.Label()
@@ -60,7 +61,7 @@ Partial Class Receipt
         Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.txtsubtotal = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnhitung = New System.Windows.Forms.Button()
         Me.Change = New System.Windows.Forms.Label()
         Me.txtchange = New System.Windows.Forms.TextBox()
         Me.txtbayar = New System.Windows.Forms.TextBox()
@@ -70,6 +71,7 @@ Partial Class Receipt
         Me.btn_tutup = New System.Windows.Forms.Button()
         Me.btnCancel = New System.Windows.Forms.Button()
         Me.btn_save = New System.Windows.Forms.Button()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
@@ -417,14 +419,14 @@ Partial Class Receipt
         Me.Label8.TabIndex = 50
         Me.Label8.Text = "Sub Total"
         '
-        'Button1
+        'btnhitung
         '
-        Me.Button1.Location = New System.Drawing.Point(36, 407)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 33)
-        Me.Button1.TabIndex = 49
-        Me.Button1.Text = "Hitung"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnhitung.Location = New System.Drawing.Point(36, 407)
+        Me.btnhitung.Name = "btnhitung"
+        Me.btnhitung.Size = New System.Drawing.Size(75, 33)
+        Me.btnhitung.TabIndex = 49
+        Me.btnhitung.Text = "Hitung"
+        Me.btnhitung.UseVisualStyleBackColor = True
         '
         'Change
         '
@@ -504,6 +506,9 @@ Partial Class Receipt
         Me.btn_save.Text = "Simpan"
         Me.btn_save.UseVisualStyleBackColor = True
         '
+        'Timer1
+        '
+        '
         'Receipt
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -511,7 +516,7 @@ Partial Class Receipt
         Me.ClientSize = New System.Drawing.Size(878, 494)
         Me.Controls.Add(Me.txtsubtotal)
         Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnhitung)
         Me.Controls.Add(Me.Change)
         Me.Controls.Add(Me.txtchange)
         Me.Controls.Add(Me.txtbayar)
@@ -571,7 +576,7 @@ Partial Class Receipt
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents txtsubtotal As TextBox
     Friend WithEvents Label8 As Label
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btnhitung As Button
     Friend WithEvents Change As Label
     Friend WithEvents txtchange As TextBox
     Friend WithEvents txtbayar As TextBox
@@ -586,4 +591,5 @@ Partial Class Receipt
     Friend WithEvents Column3 As DataGridViewTextBoxColumn
     Friend WithEvents Column4 As DataGridViewTextBoxColumn
     Friend WithEvents Column6 As DataGridViewTextBoxColumn
+    Friend WithEvents Timer1 As Timer
 End Class

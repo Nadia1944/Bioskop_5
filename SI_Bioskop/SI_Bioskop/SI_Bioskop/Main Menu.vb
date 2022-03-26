@@ -26,4 +26,12 @@
     Private Sub DataMovieToolStripMenuItem_Click_1(sender As Object, e As EventArgs) Handles DataMovieToolStripMenuItem.Click
         Movie.Show()
     End Sub
+
+    Private Sub QRCodeGeneratorToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles QRCodeGeneratorToolStripMenuItem.Click
+        QR_Code_Generator.Show()
+    End Sub
+
+    Private Sub QRReaderPictureToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles QRReaderPictureToolStripMenuItem.Click
+        ScanReader.Show()
+    End Sub
 End Class
