@@ -35,7 +35,6 @@ Partial Class Ticket
         Me.txtharga = New System.Windows.Forms.TextBox()
         Me.txtidkursi = New System.Windows.Forms.TextBox()
         Me.tgltayang = New System.Windows.Forms.DateTimePicker()
-        Me.txtjamtayang = New System.Windows.Forms.TextBox()
         Me.txtstudiomovie = New System.Windows.Forms.TextBox()
         Me.txtrate = New System.Windows.Forms.TextBox()
         Me.txtjudul = New System.Windows.Forms.TextBox()
@@ -56,6 +55,7 @@ Partial Class Ticket
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.jamtayang = New System.Windows.Forms.DateTimePicker()
         Me.GroupBox3.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         CType(Me.DGV, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -150,10 +150,10 @@ Partial Class Ticket
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.jamtayang)
         Me.GroupBox1.Controls.Add(Me.txtharga)
         Me.GroupBox1.Controls.Add(Me.txtidkursi)
         Me.GroupBox1.Controls.Add(Me.tgltayang)
-        Me.GroupBox1.Controls.Add(Me.txtjamtayang)
         Me.GroupBox1.Controls.Add(Me.txtstudiomovie)
         Me.GroupBox1.Controls.Add(Me.txtrate)
         Me.GroupBox1.Controls.Add(Me.txtjudul)
@@ -201,13 +201,6 @@ Partial Class Ticket
         Me.tgltayang.Name = "tgltayang"
         Me.tgltayang.Size = New System.Drawing.Size(109, 20)
         Me.tgltayang.TabIndex = 21
-        '
-        'txtjamtayang
-        '
-        Me.txtjamtayang.Location = New System.Drawing.Point(109, 259)
-        Me.txtjamtayang.Name = "txtjamtayang"
-        Me.txtjamtayang.Size = New System.Drawing.Size(109, 20)
-        Me.txtjamtayang.TabIndex = 20
         '
         'txtstudiomovie
         '
@@ -373,6 +366,16 @@ Partial Class Ticket
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "ID Ticket            :"
         '
+        'jamtayang
+        '
+        Me.jamtayang.CustomFormat = "hh:mm:ss"
+        Me.jamtayang.Format = System.Windows.Forms.DateTimePickerFormat.Time
+        Me.jamtayang.Location = New System.Drawing.Point(109, 259)
+        Me.jamtayang.Name = "jamtayang"
+        Me.jamtayang.ShowUpDown = True
+        Me.jamtayang.Size = New System.Drawing.Size(109, 20)
+        Me.jamtayang.TabIndex = 24
+        '
         'Ticket
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -405,7 +408,6 @@ Partial Class Ticket
     Friend WithEvents txtharga As TextBox
     Friend WithEvents txtidkursi As TextBox
     Friend WithEvents tgltayang As DateTimePicker
-    Friend WithEvents txtjamtayang As TextBox
     Friend WithEvents txtstudiomovie As TextBox
     Friend WithEvents txtrate As TextBox
     Friend WithEvents txtjudul As TextBox
@@ -426,4 +428,5 @@ Partial Class Ticket
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
+    Friend WithEvents jamtayang As DateTimePicker
 End Class
