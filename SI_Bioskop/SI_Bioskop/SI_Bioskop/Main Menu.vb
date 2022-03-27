@@ -30,4 +30,7 @@
         ScanReader.Show()
     End Sub
 
+    Private Sub FindIDCardToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FindIDCardToolStripMenuItem.Click
+        Find_ID_Card.Show()
+    End Sub
 End Class

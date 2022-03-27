@@ -39,13 +39,15 @@ Partial Class Main_Menu
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btn_exit = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.ReportToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FindIDCardToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.InputDataToolStripMenuItem, Me.TransaksiToolStripMenuItem, Me.QRCodeToolStripMenuItem1})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.InputDataToolStripMenuItem, Me.TransaksiToolStripMenuItem, Me.QRCodeToolStripMenuItem1, Me.ReportToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(705, 27)
@@ -160,6 +162,20 @@ Partial Class Main_Menu
         Me.PictureBox1.TabIndex = 3
         Me.PictureBox1.TabStop = False
         '
+        'ReportToolStripMenuItem
+        '
+        Me.ReportToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FindIDCardToolStripMenuItem})
+        Me.ReportToolStripMenuItem.Font = New System.Drawing.Font("Century Schoolbook", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ReportToolStripMenuItem.Name = "ReportToolStripMenuItem"
+        Me.ReportToolStripMenuItem.Size = New System.Drawing.Size(79, 23)
+        Me.ReportToolStripMenuItem.Text = "Report"
+        '
+        'FindIDCardToolStripMenuItem
+        '
+        Me.FindIDCardToolStripMenuItem.Name = "FindIDCardToolStripMenuItem"
+        Me.FindIDCardToolStripMenuItem.Size = New System.Drawing.Size(189, 24)
+        Me.FindIDCardToolStripMenuItem.Text = "Find ID Card"
+        '
         'Main_Menu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -197,4 +213,6 @@ Partial Class Main_Menu
     Friend WithEvents QRCodeGeneratorToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents QRReaderPictureToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents QRCodeWebcamToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ReportToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents FindIDCardToolStripMenuItem As ToolStripMenuItem
 End Class

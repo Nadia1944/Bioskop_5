@@ -160,6 +160,12 @@
     <Compile Include="Customer.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Find ID Card.Designer.vb">
+      <DependentUpon>Find ID Card.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Find ID Card.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form Report Customer.Designer.vb">
       <DependentUpon>Form Report Customer.vb</DependentUpon>
     </Compile>
@@ -183,6 +189,12 @@
     </Compile>
     <Compile Include="Form1.Designer.vb">
       <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ID Card Form.Designer.vb">
+      <DependentUpon>ID Card Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ID Card Form.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Koneksi.vb" />
@@ -288,6 +300,9 @@
     <EmbeddedResource Include="Customer.resx">
       <DependentUpon>Customer.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Find ID Card.resx">
+      <DependentUpon>Find ID Card.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form Report Customer.resx">
       <DependentUpon>Form Report Customer.vb</DependentUpon>
     </EmbeddedResource>
@@ -299,6 +314,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ID Card Form.resx">
+      <DependentUpon>ID Card Form.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Kursi.resx">
       <DependentUpon>Kursi.vb</DependentUpon>

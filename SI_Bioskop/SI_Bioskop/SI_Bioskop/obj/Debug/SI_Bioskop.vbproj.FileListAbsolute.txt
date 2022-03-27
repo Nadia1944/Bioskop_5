@@ -142,3 +142,5 @@ D:\SEMESTER 6\PAPSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bios
 D:\SEMESTER 6\PAPSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.QR_Code_reader_Webcam.resources
 D:\SEMESTER 6\PAPSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.Receipt.resources
 D:\SEMESTER 6\PAPSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.ScanReader.resources
+C:\Users\ASUS\Music\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.Find_ID_Card.resources
+C:\Users\ASUS\Music\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.ID_Card_Form.resources
