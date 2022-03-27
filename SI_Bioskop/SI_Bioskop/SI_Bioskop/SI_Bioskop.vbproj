@@ -104,8 +104,14 @@
     <Reference Include="MessagingToolkit.Barcode">
       <HintPath>..\MessagingToolkit.Barcode.dll</HintPath>
     </Reference>
+    <Reference Include="MessagingToolkit.Barcode %281%29">
+      <HintPath>..\..\..\..\..\Downloads\MessagingToolkit.Barcode (1).dll</HintPath>
+    </Reference>
     <Reference Include="MessagingToolkit.QRCode">
       <HintPath>..\MessagingToolkit.QRCode.dll</HintPath>
+    </Reference>
+    <Reference Include="MessagingToolkit.QRCode %281%29">
+      <HintPath>..\..\..\..\..\Downloads\MessagingToolkit.QRCode (1).dll</HintPath>
     </Reference>
     <Reference Include="System">
       <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.dll</HintPath>
@@ -123,6 +129,9 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="WebCam_Capture">
       <HintPath>..\WebCam_Capture.dll</HintPath>
+    </Reference>
+    <Reference Include="WebCam_Capture %281%29">
+      <HintPath>..\..\..\..\..\Downloads\WebCam_Capture (1).dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -223,6 +232,12 @@
     <Compile Include="QR Code Generator.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="BCQR_Reader.Designer.vb">
+      <DependentUpon>BCQR_Reader.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BCQR_Reader.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Receipt.Designer.vb">
       <DependentUpon>Receipt.vb</DependentUpon>
     </Compile>
@@ -239,6 +254,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Report Data Crew.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report ID Card.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report ID Card.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Report Movie.vb">
@@ -300,6 +321,9 @@
     <EmbeddedResource Include="QR Code Generator.resx">
       <DependentUpon>QR Code Generator.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="BCQR_Reader.resx">
+      <DependentUpon>BCQR_Reader.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Receipt.resx">
       <DependentUpon>Receipt.vb</DependentUpon>
     </EmbeddedResource>
@@ -310,6 +334,10 @@
     <EmbeddedResource Include="Report Data Crew.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>Report Data Crew.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report ID Card.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report ID Card.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Report Movie.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>

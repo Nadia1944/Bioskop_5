@@ -131,3 +131,10 @@ C:\Users\ASUS\Music\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bios
 C:\Users\ASUS\Music\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.Form_Report_Customer.resources
 D:\SEMESTER 6\PAPSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.Form_Report_Customer.resources
 D:\SEMESTER 6\PAPSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.Form_Report_Data_Crew.resources
+C:\Users\ASUS\Music\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.QR_Code_Generator.resources
+C:\Users\ASUS\Music\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.Receipt.resources
+C:\Users\ASUS\Music\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.ScanReader.resources
+C:\Users\ASUS\Music\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\bin\Debug\MessagingToolkit.Barcode (1).dll
+C:\Users\ASUS\Music\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\bin\Debug\MessagingToolkit.QRCode (1).dll
+C:\Users\ASUS\Music\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\bin\Debug\WebCam_Capture (1).dll
+C:\Users\ASUS\Music\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.QR_Code_reader_Webcam.resources

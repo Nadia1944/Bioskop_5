@@ -14,11 +14,6 @@
     Private Sub TicketToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TicketToolStripMenuItem.Click
         Ticket.Show()
     End Sub
-
-    Private Sub ReceiptToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ReceiptToolStripMenuItem1.Click
-
-    End Sub
-
     Private Sub btn_exit_Click(sender As Object, e As EventArgs) Handles btn_exit.Click
         Me.Close()
     End Sub
@@ -34,4 +29,5 @@
     Private Sub QRReaderPictureToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles QRReaderPictureToolStripMenuItem.Click
         ScanReader.Show()
     End Sub
+
 End Class

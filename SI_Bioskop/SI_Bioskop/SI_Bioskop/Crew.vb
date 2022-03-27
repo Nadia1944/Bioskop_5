@@ -97,7 +97,7 @@ Public Class Crew
             Exit Sub
         Else
             Call koneksiDB()
-            CMD = New OleDb.OleDbCommand("update Crew_Ticketing set Nama_Crew = '" & nama_crew.Text & "', Tempat_Lahir = '" & tempat_lahir.Text & "',
+            CMD = New OleDb.OleDbCommand("update Crew_Ticketing set Nama_Crew = '" & nama_crew.Text & "', Tempat_Lahir = '" & tempat_lahir.Text & "', Tanggal_Lahir = '" & DateTimePicker1.Value & "', Usia = '" & umur_crew.Text & "',
            Jenis_Kelamin = '" & jenis_kelamin.Text & "', Agama = '" & agama.Text & "',  No_Hp = '" &
            no_hp.Text & "', Alamat = '" & alamat.Text & "', Status = '" & status.Text & "' , Foto = '" & foto_diri.Text & "' Where ID_Crew = '" & id_crew.Text & "'", Conn)
 
