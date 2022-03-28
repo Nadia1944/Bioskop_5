@@ -32,7 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.SI_Bioskop.Login
+            Me.MainForm = Global.SI_Bioskop.QR_Code_reader_Webcam
         End Sub
     End Class
 End Namespace

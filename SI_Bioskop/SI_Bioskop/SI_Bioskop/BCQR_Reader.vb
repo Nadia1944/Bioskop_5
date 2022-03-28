@@ -10,28 +10,35 @@ Public Class QR_Code_reader_Webcam
             Mywebcam.Start(0)
             Mywebcam.Start(0)
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         End Try
     End Sub
-
+    Private Sub StopWebcam()
+        Try
+            Mywebcam.Stop()
+            Mywebcam.Dispose()
+        Catch ex As Exception
+        End Try
+    End Sub
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         StartWebCam()
         TextBox1.Clear()
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        'StopWebcam()
+        StopWebcam()
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         Try
-            'StopWebcam()
+            StopWebcam()
             Reader = New QRCodeDecoder
             TextBox1.Text = Reader.decode(New Data.QRCodeBitmapImage(PictureBox1.Image))
             MsgBox("Data Terbaca")
         Catch ex As Exception
             StartWebCam()
         End Try
+
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
@@ -43,5 +50,9 @@ Public Class QR_Code_reader_Webcam
             TextBox1.Text = result.Text
         Catch ex As Exception
         End Try
+    End Sub
+
+    Private Sub Mywebcam_ImageCaptured(source As Object, e As WebcamEventArgs) Handles Mywebcam.ImageCaptured
+        PictureBox1.Image = e.WebCamImage
     End Sub
 End Class
