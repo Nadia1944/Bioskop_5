@@ -36,11 +36,11 @@ Partial Class Main_Menu
         Me.QRCodeGeneratorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.QRReaderPictureToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.QRCodeWebcamToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FindIDCardToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btn_exit = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.ReportToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.FindIDCardToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -97,13 +97,13 @@ Partial Class Main_Menu
         'ReceiptToolStripMenuItem1
         '
         Me.ReceiptToolStripMenuItem1.Name = "ReceiptToolStripMenuItem1"
-        Me.ReceiptToolStripMenuItem1.Size = New System.Drawing.Size(142, 24)
+        Me.ReceiptToolStripMenuItem1.Size = New System.Drawing.Size(152, 24)
         Me.ReceiptToolStripMenuItem1.Text = "Receipt"
         '
         'TicketToolStripMenuItem
         '
         Me.TicketToolStripMenuItem.Name = "TicketToolStripMenuItem"
-        Me.TicketToolStripMenuItem.Size = New System.Drawing.Size(142, 24)
+        Me.TicketToolStripMenuItem.Size = New System.Drawing.Size(152, 24)
         Me.TicketToolStripMenuItem.Text = "Ticket"
         '
         'QRCodeToolStripMenuItem1
@@ -131,6 +131,20 @@ Partial Class Main_Menu
         Me.QRCodeWebcamToolStripMenuItem.Name = "QRCodeWebcamToolStripMenuItem"
         Me.QRCodeWebcamToolStripMenuItem.Size = New System.Drawing.Size(241, 24)
         Me.QRCodeWebcamToolStripMenuItem.Text = "BCQR Reader"
+        '
+        'ReportToolStripMenuItem
+        '
+        Me.ReportToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FindIDCardToolStripMenuItem})
+        Me.ReportToolStripMenuItem.Font = New System.Drawing.Font("Century Schoolbook", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ReportToolStripMenuItem.Name = "ReportToolStripMenuItem"
+        Me.ReportToolStripMenuItem.Size = New System.Drawing.Size(79, 23)
+        Me.ReportToolStripMenuItem.Text = "Report"
+        '
+        'FindIDCardToolStripMenuItem
+        '
+        Me.FindIDCardToolStripMenuItem.Name = "FindIDCardToolStripMenuItem"
+        Me.FindIDCardToolStripMenuItem.Size = New System.Drawing.Size(189, 24)
+        Me.FindIDCardToolStripMenuItem.Text = "Find ID Card"
         '
         'Label1
         '
@@ -161,20 +175,6 @@ Partial Class Main_Menu
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 3
         Me.PictureBox1.TabStop = False
-        '
-        'ReportToolStripMenuItem
-        '
-        Me.ReportToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FindIDCardToolStripMenuItem})
-        Me.ReportToolStripMenuItem.Font = New System.Drawing.Font("Century Schoolbook", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ReportToolStripMenuItem.Name = "ReportToolStripMenuItem"
-        Me.ReportToolStripMenuItem.Size = New System.Drawing.Size(79, 23)
-        Me.ReportToolStripMenuItem.Text = "Report"
-        '
-        'FindIDCardToolStripMenuItem
-        '
-        Me.FindIDCardToolStripMenuItem.Name = "FindIDCardToolStripMenuItem"
-        Me.FindIDCardToolStripMenuItem.Size = New System.Drawing.Size(189, 24)
-        Me.FindIDCardToolStripMenuItem.Text = "Find ID Card"
         '
         'Main_Menu
         '

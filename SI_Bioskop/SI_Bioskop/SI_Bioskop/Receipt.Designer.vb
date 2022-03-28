@@ -24,6 +24,8 @@ Partial Class Receipt
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.tgltayang = New System.Windows.Forms.DateTimePicker()
+        Me.jamtayang = New System.Windows.Forms.DateTimePicker()
         Me.txtnamacustomer = New System.Windows.Forms.TextBox()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.txtidcustomer = New System.Windows.Forms.TextBox()
@@ -32,8 +34,6 @@ Partial Class Receipt
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.txtGrandtotal = New System.Windows.Forms.TextBox()
         Me.txtcrew = New System.Windows.Forms.TextBox()
-        Me.txtwaktubeli = New System.Windows.Forms.TextBox()
-        Me.txttglbeli = New System.Windows.Forms.TextBox()
         Me.txtidcrew = New System.Windows.Forms.TextBox()
         Me.txtidreceipt = New System.Windows.Forms.TextBox()
         Me.Total = New System.Windows.Forms.Label()
@@ -81,6 +81,8 @@ Partial Class Receipt
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.tgltayang)
+        Me.GroupBox1.Controls.Add(Me.jamtayang)
         Me.GroupBox1.Controls.Add(Me.txtnamacustomer)
         Me.GroupBox1.Controls.Add(Me.Label16)
         Me.GroupBox1.Controls.Add(Me.txtidcustomer)
@@ -89,8 +91,6 @@ Partial Class Receipt
         Me.GroupBox1.Controls.Add(Me.PictureBox1)
         Me.GroupBox1.Controls.Add(Me.txtGrandtotal)
         Me.GroupBox1.Controls.Add(Me.txtcrew)
-        Me.GroupBox1.Controls.Add(Me.txtwaktubeli)
-        Me.GroupBox1.Controls.Add(Me.txttglbeli)
         Me.GroupBox1.Controls.Add(Me.txtidcrew)
         Me.GroupBox1.Controls.Add(Me.txtidreceipt)
         Me.GroupBox1.Controls.Add(Me.Total)
@@ -106,6 +106,23 @@ Partial Class Receipt
         Me.GroupBox1.TabIndex = 22
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Receipt"
+        '
+        'tgltayang
+        '
+        Me.tgltayang.Location = New System.Drawing.Point(633, 73)
+        Me.tgltayang.Name = "tgltayang"
+        Me.tgltayang.Size = New System.Drawing.Size(151, 20)
+        Me.tgltayang.TabIndex = 26
+        '
+        'jamtayang
+        '
+        Me.jamtayang.CustomFormat = "hh:mm:ss"
+        Me.jamtayang.Format = System.Windows.Forms.DateTimePickerFormat.Time
+        Me.jamtayang.Location = New System.Drawing.Point(633, 99)
+        Me.jamtayang.Name = "jamtayang"
+        Me.jamtayang.ShowUpDown = True
+        Me.jamtayang.Size = New System.Drawing.Size(151, 20)
+        Me.jamtayang.TabIndex = 25
         '
         'txtnamacustomer
         '
@@ -153,6 +170,7 @@ Partial Class Receipt
         Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(184, 79)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.PictureBox1.TabIndex = 16
         Me.PictureBox1.TabStop = False
         '
@@ -170,20 +188,6 @@ Partial Class Receipt
         Me.txtcrew.Name = "txtcrew"
         Me.txtcrew.Size = New System.Drawing.Size(151, 20)
         Me.txtcrew.TabIndex = 14
-        '
-        'txtwaktubeli
-        '
-        Me.txtwaktubeli.Location = New System.Drawing.Point(633, 102)
-        Me.txtwaktubeli.Name = "txtwaktubeli"
-        Me.txtwaktubeli.Size = New System.Drawing.Size(151, 20)
-        Me.txtwaktubeli.TabIndex = 13
-        '
-        'txttglbeli
-        '
-        Me.txttglbeli.Location = New System.Drawing.Point(633, 72)
-        Me.txttglbeli.Name = "txttglbeli"
-        Me.txttglbeli.Size = New System.Drawing.Size(151, 20)
-        Me.txttglbeli.TabIndex = 12
         '
         'txtidcrew
         '
@@ -506,9 +510,6 @@ Partial Class Receipt
         Me.btn_save.Text = "Simpan"
         Me.btn_save.UseVisualStyleBackColor = True
         '
-        'Timer1
-        '
-        '
         'Receipt
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -552,8 +553,6 @@ Partial Class Receipt
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents txtGrandtotal As TextBox
     Friend WithEvents txtcrew As TextBox
-    Friend WithEvents txtwaktubeli As TextBox
-    Friend WithEvents txttglbeli As TextBox
     Friend WithEvents txtidcrew As TextBox
     Friend WithEvents txtidreceipt As TextBox
     Friend WithEvents Total As Label
@@ -592,4 +591,6 @@ Partial Class Receipt
     Friend WithEvents Column4 As DataGridViewTextBoxColumn
     Friend WithEvents Column6 As DataGridViewTextBoxColumn
     Friend WithEvents Timer1 As Timer
+    Friend WithEvents jamtayang As DateTimePicker
+    Friend WithEvents tgltayang As DateTimePicker
 End Class

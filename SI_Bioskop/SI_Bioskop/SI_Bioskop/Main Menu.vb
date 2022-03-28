@@ -33,4 +33,12 @@
     Private Sub FindIDCardToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FindIDCardToolStripMenuItem.Click
         Find_ID_Card.Show()
     End Sub
+
+    Private Sub ReceiptToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ReceiptToolStripMenuItem1.Click
+        Receipt.Show()
+    End Sub
+
+    Private Sub QRCodeWebcamToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles QRCodeWebcamToolStripMenuItem.Click
+        QR_Code_reader_Webcam.Show()
+    End Sub
 End Class

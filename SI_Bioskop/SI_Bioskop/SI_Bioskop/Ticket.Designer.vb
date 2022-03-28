@@ -32,6 +32,7 @@ Partial Class Ticket
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.DGV = New System.Windows.Forms.DataGridView()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.jamtayang = New System.Windows.Forms.DateTimePicker()
         Me.txtharga = New System.Windows.Forms.TextBox()
         Me.txtidkursi = New System.Windows.Forms.TextBox()
         Me.tgltayang = New System.Windows.Forms.DateTimePicker()
@@ -55,7 +56,6 @@ Partial Class Ticket
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.jamtayang = New System.Windows.Forms.DateTimePicker()
         Me.GroupBox3.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         CType(Me.DGV, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -180,6 +180,16 @@ Partial Class Ticket
         Me.GroupBox1.TabIndex = 6
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Ticket Data"
+        '
+        'jamtayang
+        '
+        Me.jamtayang.CustomFormat = "hh:mm:ss"
+        Me.jamtayang.Format = System.Windows.Forms.DateTimePickerFormat.Time
+        Me.jamtayang.Location = New System.Drawing.Point(109, 259)
+        Me.jamtayang.Name = "jamtayang"
+        Me.jamtayang.ShowUpDown = True
+        Me.jamtayang.Size = New System.Drawing.Size(109, 20)
+        Me.jamtayang.TabIndex = 24
         '
         'txtharga
         '
@@ -365,16 +375,6 @@ Partial Class Ticket
         Me.Label1.Size = New System.Drawing.Size(90, 13)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "ID Ticket            :"
-        '
-        'jamtayang
-        '
-        Me.jamtayang.CustomFormat = "hh:mm:ss"
-        Me.jamtayang.Format = System.Windows.Forms.DateTimePickerFormat.Time
-        Me.jamtayang.Location = New System.Drawing.Point(109, 259)
-        Me.jamtayang.Name = "jamtayang"
-        Me.jamtayang.ShowUpDown = True
-        Me.jamtayang.Size = New System.Drawing.Size(109, 20)
-        Me.jamtayang.TabIndex = 24
         '
         'Ticket
         '

@@ -48,13 +48,11 @@
         txtjumlah.Text = ""
     End Sub
     Sub kondisiawal()
-        txttglbeli.Text = Today
-        txtwaktubeli.Text = TimeOfDay
+        tgltayang.Text = Today
+        jamtayang.Text = TimeOfDay
         txtcrew.Text = Login.txtUN.Text
     End Sub
-    Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
-        txtwaktubeli.Text = TimeOfDay
-    End Sub
+
     Private Sub txtjumlah_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtjumlah.KeyPress
         If e.KeyChar = Chr(13) Then
             If txtjudul.Text = "" Or txtharga.Text = "" Then
@@ -130,25 +128,25 @@
         Barcode = Barcode + txtidreceipt.Text + ".jpg"
         PictureBox1.Image.Save(Barcode)
         If txtchange.Text = "" Or txtGrandtotal.Text = "" Then
-            MsgBox("Data Transaksi Belum Lengkap")
+            MsgBox("Data Receipt Belum Lengkap")
             'Pengecekan , apabila transaksi belum terjadi maka tidak bisa di ENTER
         Else
             Dim Simpantransaksi As String = "Insert into Transaksi values ('" &
-txtidreceipt.Text & "', '" & txtidcustomer.Text & "', '" & txtGrandtotal.Text & "', '" & txttglbeli.Text & "', '" & txtwaktubeli.Text &
+txtidreceipt.Text & "', '" & txtidcustomer.Text & "', '" & txtGrandtotal.Text & "', '" & tgltayang.Text & "', '" & jamtayang.Text &
  "', '" & txtcrew.Text & "', '" & txtitems.Text & "','" & txtbayar.Text & "','" & txtchange.Text & "', '" & Barcode & "')"
             CMD = New OleDb.OleDbCommand(Simpantransaksi, Conn)
             CMD.ExecuteNonQuery()
             Call Barcode1()
-            'Data disimpan di tabel Penjualan
+            'Data disimpan di tabel Receipt
 
             For baris As Integer = 0 To DataGridView1.Rows.Count - 2
-                Dim Simpandetail As String = "Insert into Detail_Transaksi values ('" & txtidreceipt.Text & "', '" &
+                Dim Simpandetail As String = "Insert into Ticket values ('" & txtidreceipt.Text & "', '" &
                 DataGridView1.Rows(baris).Cells(0).Value & "', '" &
                 DataGridView1.Rows(baris).Cells(1).Value & "', '" &
                 DataGridView1.Rows(baris).Cells(2).Value & "', '" &
                 DataGridView1.Rows(baris).Cells(3).Value & "','" &
-                DataGridView1.Rows(baris).Cells(4).Value '& "'," &
-                ' GetRandom(1111, 99999).ToString() & ")"
+                DataGridView1.Rows(baris).Cells(4).Value & "'," ' &
+                'Get Random(1111, 99999).ToString() & ")"
                 CMD = New OleDb.OleDbCommand(Simpandetail, Conn)
                 CMD.ExecuteNonQuery()
 
@@ -162,14 +160,14 @@ txtidreceipt.Text & "', '" & txtidcustomer.Text & "', '" & txtGrandtotal.Text & 
                 CMD = New OleDb.OleDbCommand(kurangistok, Conn)
                 CMD.ExecuteNonQuery()
             Next
-            MsgBox("Transaksi Telah Tersimpan")
+            MsgBox("Receipt Telah Tersimpan")
             DataGridView1.Rows.Clear()
             Call kosongkanitem()
             Call kondisiawal()
             Nomorfakturotomatis()
 
         End If
-        'Receipt.Report_Nota_Struk1.SetParameterValue("ID_Receipt", txtidreceipt.Text)
+        'Receipt.Report_Nota_Struk.SetParameterValue("ID_Receipt", txtidreceipt.Text)
         'Receipt.Show()
     End Sub
     Sub carijumlahitem()
@@ -185,14 +183,14 @@ txtidreceipt.Text & "', '" & txtidcustomer.Text & "', '" & txtGrandtotal.Text & 
         Dim Hitung As Integer
         Total_Akhir = Val(txtGrandtotal.Text)
         txtGrandtotal.Text = Total_Akhir
-        Hitung = Val(txtsubtotal.Text)
+        Hitung = txtbayar.Text - txtGrandtotal.Text
+        txtchange.Text = Hitung
     End Sub
 
     Private Sub txtidcrew_TextChanged(sender As Object, e As EventArgs) Handles txtidcrew.TextChanged
         Try
             Call koneksiDB()
-            CMD = New OleDb.OleDbCommand(" select * from Crew where 
-id_crew ='" & txtidcrew.Text & "'", Conn)
+            CMD = New OleDb.OleDbCommand(" select * from Crew where id_crew ='" & txtidcrew.Text & "'", Conn)
             DM = CMD.ExecuteReader
             'DM.Read()
             If DM.HasRows = True Then
@@ -201,18 +199,17 @@ id_crew ='" & txtidcrew.Text & "'", Conn)
                 'row = DS.Tables(0).Rows.Find(Crew)
                 txtidcrew.Text = DM.Item("ID_crew")
                 txtcrew.Text = DM.Item("Nama_Crew")
-                'txttempatlahirkaryawan.Text = DM.Item("tempat_lahir")
-                ' DateTimePicker1.Text = DM.Item("tgl_lahir")
-                ' listjkkaryawan.Text = DM.Item("Jenis_Kelamin")
-                ' lstagamakar.Text = DM.Item("agama")
-                ' txttelpkaryawan.Text = DM.Item("no_telp")
-                ' txtalamatkaryawan.Text = DM.Item("alamat")
-                '  lststatuskaryawan.Text = DM.Item("status")
-                ' txtnamaphotokaryawan.Text = DM.Item("photo")
-                '  PictureBox1.ImageLocation = Replace((DM("photo")), ";", "\")
             End If
         Catch ex As Exception
             MsgBox(ex.ToString())
         End Try
+    End Sub
+
+    Private Sub jamtayang_ValueChanged(sender As Object, e As EventArgs) Handles jamtayang.ValueChanged
+        Dim format As String = "dddd"
+        'Debug.WriteLine(tgltayang.Value.ToString(format))
+        'txthari.Text = tgltayang.Value.ToString(format)
+        If tgltayang.Value.ToString(format) = "Minggu" Then txtharga.Text = "50.000" Else If tgltayang.Value.ToString(format) = "Sabtu" Then txtharga.Text = "50.000" Else txtharga.Text = "35.000"
+
     End Sub
 End Class
