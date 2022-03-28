@@ -7,14 +7,14 @@
         If e.KeyChar = Chr(13) Then
             'Chr(13) itu Tombol ENTER
             Call koneksiDB()
-            CMD = New OleDb.OleDbCommand("Select * from Menu where ID_Movie ='" & txt_IdMovie.Text & "'", Conn)
+            CMD = New OleDb.OleDbCommand("Select * from Movie where ID_Movie ='" & txt_IdMovie.Text & "'", Conn)
             DM = CMD.ExecuteReader
             DM.Read()
             If Not DM.HasRows Then
                 MsgBox("ID Movie Tidak Ada")
             Else
                 txt_IdMovie.Text = DM.Item("ID_Movie")
-                txtjudul.Text = DM.Item("Judul_Movie")
+                txtjudul.Text = DM.Item("Judul")
                 txtharga.Text = DM.Item("Harga")
                 txtjumlah.Enabled = True
                 txtjumlah.Focus()
@@ -104,8 +104,7 @@
                 DM.Read()
                 txtidcustomer.Text = DM.Item("ID_Customer")
                 txtnamacustomer.Text = DM.Item("Nama_Customer")
-                txtjudul.Text = DM.Item("Judul_Movie")
-                txt_IdMovie.Focus()
+                txtidcustomer.Focus()
             End If
         Catch ex As Exception
             MsgBox("Data Customer tidak ada")
@@ -131,7 +130,7 @@
             MsgBox("Data Receipt Belum Lengkap")
             'Pengecekan , apabila transaksi belum terjadi maka tidak bisa di ENTER
         Else
-            Dim Simpantransaksi As String = "Insert into Transaksi values ('" &
+            Dim Simpantransaksi As String = "Insert into Receipt values ('" &
 txtidreceipt.Text & "', '" & txtidcustomer.Text & "', '" & txtGrandtotal.Text & "', '" & tgltayang.Text & "', '" & jamtayang.Text &
  "', '" & txtcrew.Text & "', '" & txtitems.Text & "','" & txtbayar.Text & "','" & txtchange.Text & "', '" & Barcode & "')"
             CMD = New OleDb.OleDbCommand(Simpantransaksi, Conn)
@@ -150,7 +149,7 @@ txtidreceipt.Text & "', '" & txtidcustomer.Text & "', '" & txtGrandtotal.Text & 
                 CMD = New OleDb.OleDbCommand(Simpandetail, Conn)
                 CMD.ExecuteNonQuery()
 
-                CMD = New OleDb.OleDbCommand("select * from Menu where ID_Movie = '" &
+                CMD = New OleDb.OleDbCommand("select * from Movie where ID_Movie = '" &
                 DataGridView1.Rows(baris).Cells(0).Value & "'", Conn)
                 DM = CMD.ExecuteReader
                 DM.Read()
@@ -190,20 +189,19 @@ txtidreceipt.Text & "', '" & txtidcustomer.Text & "', '" & txtGrandtotal.Text & 
     Private Sub txtidcrew_TextChanged(sender As Object, e As EventArgs) Handles txtidcrew.TextChanged
         Try
             Call koneksiDB()
-            CMD = New OleDb.OleDbCommand(" select * from Crew where id_crew ='" & txtidcrew.Text & "'", Conn)
+            CMD = New OleDb.OleDbCommand(" select * from Crew_Ticketing where ID_Crew ='" & txtidcrew.Text & "'", Conn)
             DM = CMD.ExecuteReader
-            'DM.Read()
             If DM.HasRows = True Then
                 DM.Read()
-                'Dim row As DataRow
-                'row = DS.Tables(0).Rows.Find(Crew)
-                txtidcrew.Text = DM.Item("ID_crew")
+                txtidcrew.Text = DM.Item("ID_Crew")
                 txtcrew.Text = DM.Item("Nama_Crew")
+                txtidcrew.Focus()
             End If
         Catch ex As Exception
-            MsgBox(ex.ToString())
+            MsgBox(" Data Crew Tidak Tersedia")
         End Try
     End Sub
+
 
     Private Sub jamtayang_ValueChanged(sender As Object, e As EventArgs) Handles jamtayang.ValueChanged
         Dim format As String = "dddd"
@@ -212,4 +210,5 @@ txtidreceipt.Text & "', '" & txtidcustomer.Text & "', '" & txtGrandtotal.Text & 
         If tgltayang.Value.ToString(format) = "Minggu" Then txtharga.Text = "50.000" Else If tgltayang.Value.ToString(format) = "Sabtu" Then txtharga.Text = "50.000" Else txtharga.Text = "35.000"
 
     End Sub
+
 End Class
