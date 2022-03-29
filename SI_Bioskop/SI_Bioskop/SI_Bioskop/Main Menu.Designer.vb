@@ -42,6 +42,8 @@ Partial Class Main_Menu
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btn_exit = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.ReportCustomerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportMovieToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -135,7 +137,7 @@ Partial Class Main_Menu
         '
         'ReportToolStripMenuItem
         '
-        Me.ReportToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FindIDCardToolStripMenuItem, Me.PeriodikDataCrewToolStripMenuItem})
+        Me.ReportToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FindIDCardToolStripMenuItem, Me.PeriodikDataCrewToolStripMenuItem, Me.ReportCustomerToolStripMenuItem, Me.ReportMovieToolStripMenuItem})
         Me.ReportToolStripMenuItem.Font = New System.Drawing.Font("Century Schoolbook", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ReportToolStripMenuItem.Name = "ReportToolStripMenuItem"
         Me.ReportToolStripMenuItem.Size = New System.Drawing.Size(79, 23)
@@ -183,6 +185,18 @@ Partial Class Main_Menu
         Me.PictureBox1.TabIndex = 3
         Me.PictureBox1.TabStop = False
         '
+        'ReportCustomerToolStripMenuItem
+        '
+        Me.ReportCustomerToolStripMenuItem.Name = "ReportCustomerToolStripMenuItem"
+        Me.ReportCustomerToolStripMenuItem.Size = New System.Drawing.Size(244, 24)
+        Me.ReportCustomerToolStripMenuItem.Text = "Report Customer"
+        '
+        'ReportMovieToolStripMenuItem
+        '
+        Me.ReportMovieToolStripMenuItem.Name = "ReportMovieToolStripMenuItem"
+        Me.ReportMovieToolStripMenuItem.Size = New System.Drawing.Size(244, 24)
+        Me.ReportMovieToolStripMenuItem.Text = "Report Movie"
+        '
         'Main_Menu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -223,4 +237,6 @@ Partial Class Main_Menu
     Friend WithEvents ReportToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents FindIDCardToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents PeriodikDataCrewToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ReportCustomerToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ReportMovieToolStripMenuItem As ToolStripMenuItem
 End Class

@@ -20,10 +20,14 @@ Public Class ScanReader
         Dim result As MessagingToolkit.Barcode.Result
         Try
             result = Scanner.Decode(New Bitmap(PictureBox2.Image))
-            MsgBox(result.Text)
+            'MsgBox(result.Text)
             TextBox2.Text = result.Text
         Catch ex As Exception
         End Try
+    End Sub
+
+    Private Sub btnscan1_Click(sender As Object, e As EventArgs)
+
     End Sub
 End Class
 
