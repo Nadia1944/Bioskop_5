@@ -1,8 +1,11 @@
 ﻿Imports MessagingToolkit.QRCode.Codec
 Imports WebCam_Capture
+Imports MessagingToolkit.Barcode
 Public Class QR_Code_reader_Webcam
     WithEvents Mywebcam As WebCamCapture
     Dim Reader As QRCodeDecoder
+    Dim Scanner As New BarcodeDecoder
+    Dim result As MessagingToolkit.Barcode.Result
     Private Sub StartWebCam()
         Try
             'StopWebcam()
@@ -10,7 +13,7 @@ Public Class QR_Code_reader_Webcam
             Mywebcam.Start(0)
             Mywebcam.Start(0)
         Catch ex As Exception
-
+            MsgBox(ex.Message)
         End Try
     End Sub
     Private Sub StopWebcam()
@@ -32,13 +35,14 @@ Public Class QR_Code_reader_Webcam
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         Try
             StopWebcam()
+            StopWebcam()
             Reader = New QRCodeDecoder
             TextBox1.Text = Reader.decode(New Data.QRCodeBitmapImage(PictureBox1.Image))
-            MsgBox("Data Terbaca")
+            MsgBox("QR code is detected!")
+            MsgBox("QR code is detected!")
         Catch ex As Exception
-            StartWebCam()
+            MsgBox(ex.ToString)
         End Try
-
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click

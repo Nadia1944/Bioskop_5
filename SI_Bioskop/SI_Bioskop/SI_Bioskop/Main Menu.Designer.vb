@@ -38,6 +38,7 @@ Partial Class Main_Menu
         Me.QRCodeWebcamToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReportToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.FindIDCardToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PeriodikDataCrewToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btn_exit = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
@@ -97,13 +98,13 @@ Partial Class Main_Menu
         'ReceiptToolStripMenuItem1
         '
         Me.ReceiptToolStripMenuItem1.Name = "ReceiptToolStripMenuItem1"
-        Me.ReceiptToolStripMenuItem1.Size = New System.Drawing.Size(152, 24)
+        Me.ReceiptToolStripMenuItem1.Size = New System.Drawing.Size(142, 24)
         Me.ReceiptToolStripMenuItem1.Text = "Receipt"
         '
         'TicketToolStripMenuItem
         '
         Me.TicketToolStripMenuItem.Name = "TicketToolStripMenuItem"
-        Me.TicketToolStripMenuItem.Size = New System.Drawing.Size(152, 24)
+        Me.TicketToolStripMenuItem.Size = New System.Drawing.Size(142, 24)
         Me.TicketToolStripMenuItem.Text = "Ticket"
         '
         'QRCodeToolStripMenuItem1
@@ -134,7 +135,7 @@ Partial Class Main_Menu
         '
         'ReportToolStripMenuItem
         '
-        Me.ReportToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FindIDCardToolStripMenuItem})
+        Me.ReportToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FindIDCardToolStripMenuItem, Me.PeriodikDataCrewToolStripMenuItem})
         Me.ReportToolStripMenuItem.Font = New System.Drawing.Font("Century Schoolbook", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ReportToolStripMenuItem.Name = "ReportToolStripMenuItem"
         Me.ReportToolStripMenuItem.Size = New System.Drawing.Size(79, 23)
@@ -143,8 +144,14 @@ Partial Class Main_Menu
         'FindIDCardToolStripMenuItem
         '
         Me.FindIDCardToolStripMenuItem.Name = "FindIDCardToolStripMenuItem"
-        Me.FindIDCardToolStripMenuItem.Size = New System.Drawing.Size(189, 24)
+        Me.FindIDCardToolStripMenuItem.Size = New System.Drawing.Size(244, 24)
         Me.FindIDCardToolStripMenuItem.Text = "Find ID Card"
+        '
+        'PeriodikDataCrewToolStripMenuItem
+        '
+        Me.PeriodikDataCrewToolStripMenuItem.Name = "PeriodikDataCrewToolStripMenuItem"
+        Me.PeriodikDataCrewToolStripMenuItem.Size = New System.Drawing.Size(244, 24)
+        Me.PeriodikDataCrewToolStripMenuItem.Text = "Periodik Data Crew"
         '
         'Label1
         '
@@ -215,4 +222,5 @@ Partial Class Main_Menu
     Friend WithEvents QRCodeWebcamToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ReportToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents FindIDCardToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents PeriodikDataCrewToolStripMenuItem As ToolStripMenuItem
 End Class

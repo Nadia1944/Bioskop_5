@@ -41,4 +41,8 @@
     Private Sub QRCodeWebcamToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles QRCodeWebcamToolStripMenuItem.Click
         QR_Code_reader_Webcam.Show()
     End Sub
+
+    Private Sub PeriodikDataCrewToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PeriodikDataCrewToolStripMenuItem.Click
+        Interval_Data_Crew.Show()
+    End Sub
 End Class

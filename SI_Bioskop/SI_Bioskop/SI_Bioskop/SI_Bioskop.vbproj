@@ -188,6 +188,12 @@
     <Compile Include="ID Card Form.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Interval Data Crew.Designer.vb">
+      <DependentUpon>Interval Data Crew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interval Data Crew.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Koneksi.vb" />
     <Compile Include="Kursi.Designer.vb">
       <DependentUpon>Kursi.vb</DependentUpon>
@@ -308,6 +314,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ID Card Form.resx">
       <DependentUpon>ID Card Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interval Data Crew.resx">
+      <DependentUpon>Interval Data Crew.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Kursi.resx">
       <DependentUpon>Kursi.vb</DependentUpon>
