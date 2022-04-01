@@ -35,14 +35,14 @@ Partial Class ID_Card_Form
         Me.CrystalReportViewer1.Location = New System.Drawing.Point(0, 0)
         Me.CrystalReportViewer1.Name = "CrystalReportViewer1"
         Me.CrystalReportViewer1.ReportSource = Me.Report_ID_Card1
-        Me.CrystalReportViewer1.Size = New System.Drawing.Size(679, 385)
+        Me.CrystalReportViewer1.Size = New System.Drawing.Size(841, 482)
         Me.CrystalReportViewer1.TabIndex = 0
         '
         'ID_Card_Form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(679, 385)
+        Me.ClientSize = New System.Drawing.Size(841, 482)
         Me.Controls.Add(Me.CrystalReportViewer1)
         Me.Name = "ID_Card_Form"
         Me.Text = "ID_Card_Form"
