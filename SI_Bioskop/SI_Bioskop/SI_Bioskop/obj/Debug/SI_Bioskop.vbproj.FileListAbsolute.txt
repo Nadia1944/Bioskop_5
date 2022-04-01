@@ -141,7 +141,6 @@ D:\SEMESTER 6\PAPSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bios
 D:\SEMESTER 6\PAPSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.ScanReader.resources
 C:\Users\ASUS\Music\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.Find_ID_Card.resources
 C:\Users\ASUS\Music\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.ID_Card_Form.resources
-C:\Users\ASUS\Music\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\bin\Debug\WebCam_Capture.dll
 C:\Users\Anggis\Documents\S M T R  6 ! !\Prak APSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.Find_ID_Card.resources
 C:\Users\Anggis\Documents\S M T R  6 ! !\Prak APSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.Form_Report_Customer.resources
 C:\Users\Anggis\Documents\S M T R  6 ! !\Prak APSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.ID_Card_Form.resources
@@ -152,3 +151,4 @@ C:\Users\Anggis\Documents\S M T R  6 ! !\Prak APSI\Bioskop_5\SI_Bioskop\SI_Biosk
 D:\SEMESTER 6\PAPSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.Find_ID_Card.resources
 D:\SEMESTER 6\PAPSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.ID_Card_Form.resources
 C:\Users\ASUS\Music\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.Interval_Data_Crew.resources
+C:\Users\ASUS\Music\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\bin\Debug\WebCam_Capture.dll

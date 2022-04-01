@@ -180,7 +180,7 @@ txtidreceipt.Text & "', '" & txtidcustomer.Text & "', '" & txtGrandtotal.Text & 
     Private Sub Btnhitung_Click(sender As Object, e As EventArgs) Handles btnhitung.Click
         Dim Total_Akhir As Integer
         Dim Hitung As Integer
-        Total_Akhir = Val(txtGrandtotal.Text)
+        Total_Akhir = (Val(txtGrandtotal.Text))
         txtGrandtotal.Text = Total_Akhir
         Hitung = txtbayar.Text - txtGrandtotal.Text
         txtchange.Text = Hitung
@@ -210,5 +210,4 @@ txtidreceipt.Text & "', '" & txtidcustomer.Text & "', '" & txtGrandtotal.Text & 
         If tgltayang.Value.ToString(format) = "Minggu" Then txtharga.Text = "50.000" Else If tgltayang.Value.ToString(format) = "Sabtu" Then txtharga.Text = "50.000" Else txtharga.Text = "35.000"
 
     End Sub
-
 End Class
