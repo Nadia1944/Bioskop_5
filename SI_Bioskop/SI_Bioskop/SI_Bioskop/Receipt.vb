@@ -3,7 +3,7 @@
         Call kondisiawal()
         Call Nomorfakturotomatis()
     End Sub
-    Private Sub txt_Kode_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txt_IdMovie.KeyPress
+    Private Sub txt_IdMovie_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txt_IdMovie.KeyPress
         If e.KeyChar = Chr(13) Then
             'Chr(13) itu Tombol ENTER
             Call koneksiDB()
@@ -15,9 +15,8 @@
             Else
                 txt_IdMovie.Text = DM.Item("ID_Movie")
                 txtjudul.Text = DM.Item("Judul")
-                txtharga.Text = DM.Item("Harga")
-                txtjumlah.Enabled = True
-                txtjumlah.Focus()
+                'txtjumlah.Enabled = True
+                'txtjumlah.Focus()
             End If
         End If
     End Sub
@@ -48,7 +47,7 @@
         txtjumlah.Text = ""
     End Sub
     Sub kondisiawal()
-        tgltayang.Text = Today
+        tgltayang.Text = tgltayang.Value
         jamtayang.Text = TimeOfDay
         txtcrew.Text = Login.txtUN.Text
     End Sub
@@ -139,7 +138,7 @@ txtidreceipt.Text & "', '" & txtidcustomer.Text & "', '" & txtGrandtotal.Text & 
             'Data disimpan di tabel Receipt
 
             For baris As Integer = 0 To DataGridView1.Rows.Count - 2
-                Dim Simpandetail As String = "Insert into Ticket values ('" & txtidreceipt.Text & "', '" &
+                Dim Simpandetail As String = "Insert into Detail_Receipt values ('" & txtidreceipt.Text & "', '" &
                 DataGridView1.Rows(baris).Cells(0).Value & "', '" &
                 DataGridView1.Rows(baris).Cells(1).Value & "', '" &
                 DataGridView1.Rows(baris).Cells(2).Value & "', '" &
@@ -149,12 +148,12 @@ txtidreceipt.Text & "', '" & txtidcustomer.Text & "', '" & txtGrandtotal.Text & 
                 CMD = New OleDb.OleDbCommand(Simpandetail, Conn)
                 CMD.ExecuteNonQuery()
 
-                CMD = New OleDb.OleDbCommand("select * from Movie where ID_Movie = '" &
+                CMD = New OleDb.OleDbCommand("select * from Kursi where ID_Kursi = '" &
                 DataGridView1.Rows(baris).Cells(0).Value & "'", Conn)
                 DM = CMD.ExecuteReader
                 DM.Read()
-                Dim kurangistok As String = "Update Movie set Stok = '" &
-                DM.Item("Stok") - DataGridView1.Rows(baris).Cells(3).Value & "' where ID_Movie = '" &
+                Dim kurangistok As String = "Update Kursi set Stok = '" &
+                DM.Item("Stok") - DataGridView1.Rows(baris).Cells(3).Value & "' where ID_Kursi = '" &
                 DataGridView1.Rows(baris).Cells(0).Value & "'"
                 CMD = New OleDb.OleDbCommand(kurangistok, Conn)
                 CMD.ExecuteNonQuery()
@@ -207,7 +206,7 @@ txtidreceipt.Text & "', '" & txtidcustomer.Text & "', '" & txtGrandtotal.Text & 
         Dim format As String = "dddd"
         'Debug.WriteLine(tgltayang.Value.ToString(format))
         'txthari.Text = tgltayang.Value.ToString(format)
-        If tgltayang.Value.ToString(format) = "Minggu" Then txtharga.Text = "50.000" Else If tgltayang.Value.ToString(format) = "Sabtu" Then txtharga.Text = "50.000" Else txtharga.Text = "35.000"
+        If tgltayang.Value.ToString(format) = "Sunday" Then txtharga.Text = "50.000" Else If tgltayang.Value.ToString(format) = "Saturday" Then txtharga.Text = "50.000" Else txtharga.Text = "35.000"
 
     End Sub
 End Class
