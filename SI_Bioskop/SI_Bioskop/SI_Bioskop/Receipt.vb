@@ -43,7 +43,6 @@
     Sub kosongkanitem()
         txt_IdMovie.Text = ""
         txtjudul.Text = ""
-        txtharga.Text = ""
         txtjumlah.Text = ""
     End Sub
     Sub kondisiawal()
