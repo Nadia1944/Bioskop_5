@@ -239,6 +239,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Print Ticket.Designer.vb">
+      <DependentUpon>Print Ticket.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Print Ticket.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="QR Code Generator.Designer.vb">
       <DependentUpon>QR Code Generator.vb</DependentUpon>
     </Compile>
@@ -251,11 +257,23 @@
     <Compile Include="BCQR_Reader.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Receipt Bioskop.Designer.vb">
+      <DependentUpon>Receipt Bioskop.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Receipt Bioskop.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Receipt.Designer.vb">
       <DependentUpon>Receipt.vb</DependentUpon>
     </Compile>
     <Compile Include="Receipt.vb">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report Crew.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report Crew.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Report Customer.vb">
       <AutoGen>True</AutoGen>
@@ -267,6 +285,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Report Data Crew.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report ID Card Crew.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report ID Card Crew.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Report ID Card.vb">
@@ -281,16 +305,28 @@
       <DependentUpon>Report Movie.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Report Periodik.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report Periodik.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report Receipt.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report Receipt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report Ticket.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report Ticket.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="ScanReader.Designer.vb">
       <DependentUpon>ScanReader.vb</DependentUpon>
     </Compile>
     <Compile Include="ScanReader.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Ticket.Designer.vb">
-      <DependentUpon>Ticket.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Ticket.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
@@ -340,14 +376,24 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Print Ticket.resx">
+      <DependentUpon>Print Ticket.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="QR Code Generator.resx">
       <DependentUpon>QR Code Generator.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BCQR_Reader.resx">
       <DependentUpon>BCQR_Reader.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Receipt Bioskop.resx">
+      <DependentUpon>Receipt Bioskop.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Receipt.resx">
       <DependentUpon>Receipt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report Crew.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report Crew.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Report Customer.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
@@ -357,6 +403,10 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>Report Data Crew.vb</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Report ID Card Crew.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report ID Card Crew.vb</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Report ID Card.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>Report ID Card.vb</LastGenOutput>
@@ -365,11 +415,20 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>Report Movie.vb</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Report Periodik.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report Periodik.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report Receipt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report Receipt.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report Ticket.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report Ticket.vb</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="ScanReader.resx">
       <DependentUpon>ScanReader.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Ticket.resx">
-      <DependentUpon>Ticket.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
