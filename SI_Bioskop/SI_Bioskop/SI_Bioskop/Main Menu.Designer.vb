@@ -31,7 +31,7 @@ Partial Class Main_Menu
         Me.DataKursiToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TransaksiToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReceiptToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.TicketToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReceiptBioskopToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.QRCodeToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.QRCodeGeneratorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.QRReaderPictureToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -39,11 +39,11 @@ Partial Class Main_Menu
         Me.ReportToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.FindIDCardToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PeriodikDataCrewToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportCustomerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportMovieToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btn_exit = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.ReportCustomerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ReportMovieToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -53,7 +53,7 @@ Partial Class Main_Menu
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.InputDataToolStripMenuItem, Me.TransaksiToolStripMenuItem, Me.QRCodeToolStripMenuItem1, Me.ReportToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(705, 27)
+        Me.MenuStrip1.Size = New System.Drawing.Size(406, 27)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -91,7 +91,7 @@ Partial Class Main_Menu
         '
         'TransaksiToolStripMenuItem
         '
-        Me.TransaksiToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ReceiptToolStripMenuItem1, Me.TicketToolStripMenuItem})
+        Me.TransaksiToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ReceiptToolStripMenuItem1, Me.ReceiptBioskopToolStripMenuItem})
         Me.TransaksiToolStripMenuItem.Font = New System.Drawing.Font("Century Schoolbook", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TransaksiToolStripMenuItem.Name = "TransaksiToolStripMenuItem"
         Me.TransaksiToolStripMenuItem.Size = New System.Drawing.Size(105, 23)
@@ -100,14 +100,14 @@ Partial Class Main_Menu
         'ReceiptToolStripMenuItem1
         '
         Me.ReceiptToolStripMenuItem1.Name = "ReceiptToolStripMenuItem1"
-        Me.ReceiptToolStripMenuItem1.Size = New System.Drawing.Size(142, 24)
+        Me.ReceiptToolStripMenuItem1.Size = New System.Drawing.Size(215, 24)
         Me.ReceiptToolStripMenuItem1.Text = "Receipt"
         '
-        'TicketToolStripMenuItem
+        'ReceiptBioskopToolStripMenuItem
         '
-        Me.TicketToolStripMenuItem.Name = "TicketToolStripMenuItem"
-        Me.TicketToolStripMenuItem.Size = New System.Drawing.Size(142, 24)
-        Me.TicketToolStripMenuItem.Text = "Ticket"
+        Me.ReceiptBioskopToolStripMenuItem.Name = "ReceiptBioskopToolStripMenuItem"
+        Me.ReceiptBioskopToolStripMenuItem.Size = New System.Drawing.Size(215, 24)
+        Me.ReceiptBioskopToolStripMenuItem.Text = "Receipt Bioskop"
         '
         'QRCodeToolStripMenuItem1
         '
@@ -155,36 +155,6 @@ Partial Class Main_Menu
         Me.PeriodikDataCrewToolStripMenuItem.Size = New System.Drawing.Size(244, 24)
         Me.PeriodikDataCrewToolStripMenuItem.Text = "Periodik Data Crew"
         '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Century Schoolbook", 32.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(126, 27)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(415, 50)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Sistem Informasi "
-        '
-        'btn_exit
-        '
-        Me.btn_exit.Location = New System.Drawing.Point(588, 404)
-        Me.btn_exit.Name = "btn_exit"
-        Me.btn_exit.Size = New System.Drawing.Size(79, 32)
-        Me.btn_exit.TabIndex = 2
-        Me.btn_exit.Text = "Exit"
-        Me.btn_exit.UseVisualStyleBackColor = True
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(44, 80)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(1, 3, 3, 3)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(603, 304)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 3
-        Me.PictureBox1.TabStop = False
-        '
         'ReportCustomerToolStripMenuItem
         '
         Me.ReportCustomerToolStripMenuItem.Name = "ReportCustomerToolStripMenuItem"
@@ -197,19 +167,48 @@ Partial Class Main_Menu
         Me.ReportMovieToolStripMenuItem.Size = New System.Drawing.Size(244, 24)
         Me.ReportMovieToolStripMenuItem.Text = "Report Movie"
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Century Schoolbook", 32.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(39, 36)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(335, 50)
+        Me.Label1.TabIndex = 1
+        Me.Label1.Text = "ANN CINEMA"
+        '
+        'btn_exit
+        '
+        Me.btn_exit.Location = New System.Drawing.Point(318, 296)
+        Me.btn_exit.Name = "btn_exit"
+        Me.btn_exit.Size = New System.Drawing.Size(79, 32)
+        Me.btn_exit.TabIndex = 2
+        Me.btn_exit.Text = "Exit"
+        Me.btn_exit.UseVisualStyleBackColor = True
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(10, 89)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(1, 3, 3, 3)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(387, 201)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 3
+        Me.PictureBox1.TabStop = False
+        '
         'Main_Menu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(705, 448)
+        Me.ClientSize = New System.Drawing.Size(406, 336)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.btn_exit)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Main_Menu"
-        Me.Text = "Main_Menu"
-        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
+        Me.Text = "Main Menu"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -225,7 +224,6 @@ Partial Class Main_Menu
     Friend WithEvents DataCrewToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents TransaksiToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ReceiptToolStripMenuItem1 As ToolStripMenuItem
-    Friend WithEvents TicketToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents Label1 As Label
     Friend WithEvents btn_exit As Button
     Friend WithEvents PictureBox1 As PictureBox
@@ -239,4 +237,5 @@ Partial Class Main_Menu
     Friend WithEvents PeriodikDataCrewToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ReportCustomerToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ReportMovieToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ReceiptBioskopToolStripMenuItem As ToolStripMenuItem
 End Class

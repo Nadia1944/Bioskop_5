@@ -11,9 +11,6 @@
         Kursi.Show()
     End Sub
 
-    Private Sub TicketToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TicketToolStripMenuItem.Click
-        Ticket.Show()
-    End Sub
     Private Sub btn_exit_Click(sender As Object, e As EventArgs) Handles btn_exit.Click
         Me.Close()
     End Sub
@@ -52,5 +49,9 @@
 
     Private Sub ReportMovieToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ReportMovieToolStripMenuItem.Click
         Form_Report_Movie.Show()
+    End Sub
+
+    Private Sub ReceiptBioskopToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ReceiptBioskopToolStripMenuItem.Click
+        Receipt_Bioskop.Show()
     End Sub
 End Class
