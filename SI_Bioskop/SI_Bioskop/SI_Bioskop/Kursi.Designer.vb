@@ -22,131 +22,116 @@ Partial Class Kursi
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Kursi))
+        Me.btn_Exit = New System.Windows.Forms.Button()
+        Me.btn_Cancel = New System.Windows.Forms.Button()
+        Me.btn_Delete = New System.Windows.Forms.Button()
+        Me.btn_Edit = New System.Windows.Forms.Button()
+        Me.btn_Save = New System.Windows.Forms.Button()
+        Me.btn_input = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.DGV = New System.Windows.Forms.DataGridView()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Stok = New System.Windows.Forms.TextBox()
+        Me.Studio = New System.Windows.Forms.TextBox()
+        Me.Id_kursi = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.GroupBox3.SuspendLayout()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GroupBox2.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DGV, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'GroupBox3
+        'btn_Exit
         '
-        Me.GroupBox3.Controls.Add(Me.Button6)
-        Me.GroupBox3.Controls.Add(Me.Button5)
-        Me.GroupBox3.Controls.Add(Me.Button4)
-        Me.GroupBox3.Controls.Add(Me.Button3)
-        Me.GroupBox3.Controls.Add(Me.Button2)
-        Me.GroupBox3.Controls.Add(Me.Button1)
-        Me.GroupBox3.Location = New System.Drawing.Point(28, 174)
-        Me.GroupBox3.Margin = New System.Windows.Forms.Padding(2)
-        Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Padding = New System.Windows.Forms.Padding(2)
-        Me.GroupBox3.Size = New System.Drawing.Size(209, 74)
-        Me.GroupBox3.TabIndex = 5
-        Me.GroupBox3.TabStop = False
+        Me.btn_Exit.Location = New System.Drawing.Point(180, 211)
+        Me.btn_Exit.Margin = New System.Windows.Forms.Padding(2)
+        Me.btn_Exit.Name = "btn_Exit"
+        Me.btn_Exit.Size = New System.Drawing.Size(57, 23)
+        Me.btn_Exit.TabIndex = 5
+        Me.btn_Exit.Text = "EXIT"
+        Me.btn_Exit.UseVisualStyleBackColor = True
         '
-        'Button6
+        'btn_Cancel
         '
-        Me.Button6.Location = New System.Drawing.Point(147, 46)
-        Me.Button6.Margin = New System.Windows.Forms.Padding(2)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(57, 19)
-        Me.Button6.TabIndex = 5
-        Me.Button6.Text = "EXIT"
-        Me.Button6.UseVisualStyleBackColor = True
+        Me.btn_Cancel.Location = New System.Drawing.Point(28, 213)
+        Me.btn_Cancel.Margin = New System.Windows.Forms.Padding(2)
+        Me.btn_Cancel.Name = "btn_Cancel"
+        Me.btn_Cancel.Size = New System.Drawing.Size(57, 19)
+        Me.btn_Cancel.TabIndex = 4
+        Me.btn_Cancel.Text = "CANCEL"
+        Me.btn_Cancel.UseVisualStyleBackColor = True
         '
-        'Button5
+        'btn_Delete
         '
-        Me.Button5.Location = New System.Drawing.Point(74, 46)
-        Me.Button5.Margin = New System.Windows.Forms.Padding(2)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(57, 19)
-        Me.Button5.TabIndex = 4
-        Me.Button5.Text = "CANCEL"
-        Me.Button5.UseVisualStyleBackColor = True
+        Me.btn_Delete.Location = New System.Drawing.Point(105, 213)
+        Me.btn_Delete.Margin = New System.Windows.Forms.Padding(2)
+        Me.btn_Delete.Name = "btn_Delete"
+        Me.btn_Delete.Size = New System.Drawing.Size(57, 19)
+        Me.btn_Delete.TabIndex = 3
+        Me.btn_Delete.Text = "DELETE"
+        Me.btn_Delete.UseVisualStyleBackColor = True
         '
-        'Button4
+        'btn_Edit
         '
-        Me.Button4.Location = New System.Drawing.Point(5, 46)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(2)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(57, 19)
-        Me.Button4.TabIndex = 3
-        Me.Button4.Text = "DELETE"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.btn_Edit.Location = New System.Drawing.Point(180, 168)
+        Me.btn_Edit.Margin = New System.Windows.Forms.Padding(2)
+        Me.btn_Edit.Name = "btn_Edit"
+        Me.btn_Edit.Size = New System.Drawing.Size(57, 19)
+        Me.btn_Edit.TabIndex = 2
+        Me.btn_Edit.Text = "EDIT"
+        Me.btn_Edit.UseVisualStyleBackColor = True
         '
-        'Button3
+        'btn_Save
         '
-        Me.Button3.Location = New System.Drawing.Point(147, 13)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(2)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(57, 19)
-        Me.Button3.TabIndex = 2
-        Me.Button3.Text = "EDIT"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btn_Save.Location = New System.Drawing.Point(105, 168)
+        Me.btn_Save.Margin = New System.Windows.Forms.Padding(2)
+        Me.btn_Save.Name = "btn_Save"
+        Me.btn_Save.Size = New System.Drawing.Size(57, 19)
+        Me.btn_Save.TabIndex = 1
+        Me.btn_Save.Text = "SAVE"
+        Me.btn_Save.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btn_input
         '
-        Me.Button2.Location = New System.Drawing.Point(74, 13)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(2)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(57, 19)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "SAVE"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(5, 13)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(2)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(57, 19)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "INPUT"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btn_input.Location = New System.Drawing.Point(28, 168)
+        Me.btn_input.Margin = New System.Windows.Forms.Padding(2)
+        Me.btn_input.Name = "btn_input"
+        Me.btn_input.Size = New System.Drawing.Size(57, 19)
+        Me.btn_input.TabIndex = 0
+        Me.btn_input.Text = "INPUT"
+        Me.btn_input.UseVisualStyleBackColor = True
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.DataGridView1)
-        Me.GroupBox2.Location = New System.Drawing.Point(241, 29)
+        Me.GroupBox2.Controls.Add(Me.DGV)
+        Me.GroupBox2.Location = New System.Drawing.Point(28, 247)
         Me.GroupBox2.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Padding = New System.Windows.Forms.Padding(2)
-        Me.GroupBox2.Size = New System.Drawing.Size(236, 219)
+        Me.GroupBox2.Size = New System.Drawing.Size(311, 114)
         Me.GroupBox2.TabIndex = 4
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Detail Data Kursi"
         '
-        'DataGridView1
+        'DGV
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(11, 16)
-        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.RowTemplate.Height = 28
-        Me.DataGridView1.Size = New System.Drawing.Size(210, 194)
-        Me.DataGridView1.TabIndex = 0
+        Me.DGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DGV.Location = New System.Drawing.Point(16, 17)
+        Me.DGV.Margin = New System.Windows.Forms.Padding(2)
+        Me.DGV.Name = "DGV"
+        Me.DGV.RowTemplate.Height = 28
+        Me.DGV.Size = New System.Drawing.Size(281, 87)
+        Me.DGV.TabIndex = 0
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.TextBox3)
-        Me.GroupBox1.Controls.Add(Me.TextBox2)
-        Me.GroupBox1.Controls.Add(Me.TextBox1)
+        Me.GroupBox1.Controls.Add(Me.Stok)
+        Me.GroupBox1.Controls.Add(Me.Studio)
+        Me.GroupBox1.Controls.Add(Me.Id_kursi)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
@@ -154,34 +139,34 @@ Partial Class Kursi
         Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2)
-        Me.GroupBox1.Size = New System.Drawing.Size(209, 133)
+        Me.GroupBox1.Size = New System.Drawing.Size(209, 114)
         Me.GroupBox1.TabIndex = 3
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Input Data Kursi"
         '
-        'TextBox3
+        'Stok
         '
-        Me.TextBox3.Location = New System.Drawing.Point(87, 53)
-        Me.TextBox3.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(98, 20)
-        Me.TextBox3.TabIndex = 5
+        Me.Stok.Location = New System.Drawing.Point(87, 53)
+        Me.Stok.Margin = New System.Windows.Forms.Padding(2)
+        Me.Stok.Name = "Stok"
+        Me.Stok.Size = New System.Drawing.Size(98, 20)
+        Me.Stok.TabIndex = 5
         '
-        'TextBox2
+        'Studio
         '
-        Me.TextBox2.Location = New System.Drawing.Point(87, 83)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(98, 20)
-        Me.TextBox2.TabIndex = 4
+        Me.Studio.Location = New System.Drawing.Point(87, 83)
+        Me.Studio.Margin = New System.Windows.Forms.Padding(2)
+        Me.Studio.Name = "Studio"
+        Me.Studio.Size = New System.Drawing.Size(98, 20)
+        Me.Studio.TabIndex = 4
         '
-        'TextBox1
+        'Id_kursi
         '
-        Me.TextBox1.Location = New System.Drawing.Point(87, 27)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(98, 20)
-        Me.TextBox1.TabIndex = 3
+        Me.Id_kursi.Location = New System.Drawing.Point(87, 27)
+        Me.Id_kursi.Margin = New System.Windows.Forms.Padding(2)
+        Me.Id_kursi.Name = "Id_kursi"
+        Me.Id_kursi.Size = New System.Drawing.Size(98, 20)
+        Me.Id_kursi.TabIndex = 3
         '
         'Label3
         '
@@ -213,39 +198,53 @@ Partial Class Kursi
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "ID Kursi :"
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(363, 29)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(411, 311)
+        Me.PictureBox1.TabIndex = 6
+        Me.PictureBox1.TabStop = False
+        '
         'Kursi
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(504, 277)
-        Me.Controls.Add(Me.GroupBox3)
+        Me.ClientSize = New System.Drawing.Size(794, 374)
+        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.btn_Exit)
+        Me.Controls.Add(Me.btn_Cancel)
         Me.Controls.Add(Me.GroupBox2)
+        Me.Controls.Add(Me.btn_Delete)
         Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.btn_Edit)
+        Me.Controls.Add(Me.btn_input)
+        Me.Controls.Add(Me.btn_Save)
         Me.Name = "Kursi"
         Me.Text = "Kursi"
-        Me.GroupBox3.ResumeLayout(False)
         Me.GroupBox2.ResumeLayout(False)
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DGV, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
-
-    Friend WithEvents GroupBox3 As GroupBox
-    Friend WithEvents Button6 As Button
-    Friend WithEvents Button5 As Button
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btn_Exit As Button
+    Friend WithEvents btn_Cancel As Button
+    Friend WithEvents btn_Delete As Button
+    Friend WithEvents btn_Edit As Button
+    Friend WithEvents btn_Save As Button
+    Friend WithEvents btn_input As Button
     Friend WithEvents GroupBox2 As GroupBox
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents DGV As DataGridView
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents Stok As TextBox
+    Friend WithEvents Studio As TextBox
+    Friend WithEvents Id_kursi As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
+    Friend WithEvents PictureBox1 As PictureBox
 End Class
