@@ -54,6 +54,8 @@ Partial Class Receipt_Bioskop
         Me.txtjudul = New System.Windows.Forms.TextBox()
         Me.txtidmovie = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.txtidcrew = New System.Windows.Forms.TextBox()
+        Me.Label19 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.txtchange = New System.Windows.Forms.TextBox()
@@ -76,8 +78,6 @@ Partial Class Receipt_Bioskop
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.txtidcrew = New System.Windows.Forms.TextBox()
-        Me.Label19 = New System.Windows.Forms.Label()
         Me.GroupBox3.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
@@ -362,6 +362,22 @@ Partial Class Receipt_Bioskop
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Receipt"
         '
+        'txtidcrew
+        '
+        Me.txtidcrew.Location = New System.Drawing.Point(100, 67)
+        Me.txtidcrew.Name = "txtidcrew"
+        Me.txtidcrew.Size = New System.Drawing.Size(108, 20)
+        Me.txtidcrew.TabIndex = 22
+        '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.Location = New System.Drawing.Point(6, 70)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(87, 13)
+        Me.Label19.TabIndex = 21
+        Me.Label19.Text = "ID Crew             :"
+        '
         'PictureBox1
         '
         Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
@@ -539,22 +555,6 @@ Partial Class Receipt_Bioskop
         '
         'Timer1
         '
-        '
-        'txtidcrew
-        '
-        Me.txtidcrew.Location = New System.Drawing.Point(100, 67)
-        Me.txtidcrew.Name = "txtidcrew"
-        Me.txtidcrew.Size = New System.Drawing.Size(108, 20)
-        Me.txtidcrew.TabIndex = 22
-        '
-        'Label19
-        '
-        Me.Label19.AutoSize = True
-        Me.Label19.Location = New System.Drawing.Point(6, 70)
-        Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(87, 13)
-        Me.Label19.TabIndex = 21
-        Me.Label19.Text = "ID Crew             :"
         '
         'Receipt_Bioskop
         '

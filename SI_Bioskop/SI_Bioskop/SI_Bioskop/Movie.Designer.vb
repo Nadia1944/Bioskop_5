@@ -23,6 +23,7 @@ Partial Class Movie
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.jam_tayang = New System.Windows.Forms.DateTimePicker()
         Me.Rate = New System.Windows.Forms.ComboBox()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.studio = New System.Windows.Forms.TextBox()
@@ -47,7 +48,6 @@ Partial Class Movie
         Me.Label7 = New System.Windows.Forms.Label()
         Me.lblwelcome = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.jam_tayang = New System.Windows.Forms.DateTimePicker()
         Me.GroupBox1.SuspendLayout()
         CType(Me.DGV1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox3.SuspendLayout()
@@ -74,6 +74,17 @@ Partial Class Movie
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Movie"
+        '
+        'jam_tayang
+        '
+        Me.jam_tayang.CustomFormat = "hh:mm:ss"
+        Me.jam_tayang.Format = System.Windows.Forms.DateTimePickerFormat.Time
+        Me.jam_tayang.Location = New System.Drawing.Point(113, 197)
+        Me.jam_tayang.Name = "jam_tayang"
+        Me.jam_tayang.ShowUpDown = True
+        Me.jam_tayang.Size = New System.Drawing.Size(123, 20)
+        Me.jam_tayang.TabIndex = 13
+        Me.jam_tayang.Value = New Date(2022, 3, 25, 21, 59, 0, 0)
         '
         'Rate
         '
@@ -289,17 +300,6 @@ Partial Class Movie
         Me.Label8.Size = New System.Drawing.Size(114, 29)
         Me.Label8.TabIndex = 63
         Me.Label8.Text = "Welcome"
-        '
-        'jam_tayang
-        '
-        Me.jam_tayang.CustomFormat = "hh:mm:ss"
-        Me.jam_tayang.Format = System.Windows.Forms.DateTimePickerFormat.Time
-        Me.jam_tayang.Location = New System.Drawing.Point(113, 197)
-        Me.jam_tayang.Name = "jam_tayang"
-        Me.jam_tayang.ShowUpDown = True
-        Me.jam_tayang.Size = New System.Drawing.Size(123, 20)
-        Me.jam_tayang.TabIndex = 13
-        Me.jam_tayang.Value = New Date(2022, 3, 25, 21, 59, 0, 0)
         '
         'Movie
         '
