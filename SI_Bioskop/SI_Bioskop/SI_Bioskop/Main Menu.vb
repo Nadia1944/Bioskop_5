@@ -54,4 +54,12 @@
     Private Sub ReceiptBioskopToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ReceiptBioskopToolStripMenuItem.Click
         Receipt_Bioskop.Show()
     End Sub
+
+    Private Sub ReportKursiToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ReportKursiToolStripMenuItem.Click
+        Form_Report_Kursi.Show()
+    End Sub
+
+    Private Sub ReportCrewTicketingToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ReportCrewTicketingToolStripMenuItem.Click
+        Form_Report_Crew.Show()
+    End Sub
 End Class

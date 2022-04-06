@@ -156,3 +156,4 @@ D:\SEMESTER 6\PAPSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bios
 D:\SEMESTER 6\PAPSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.Receipt_Bioskop.resources
 C:\Users\ASUS\Music\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.Print_Ticket.resources
 C:\Users\ASUS\Music\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.Receipt_Bioskop.resources
+C:\Users\ASUS\Music\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\Debug\SI_Bioskop.Report_ID_Card_Crew_Viewer.resources

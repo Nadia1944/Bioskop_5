@@ -157,6 +157,12 @@
     <Compile Include="Find ID Card.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Form Report Crew.Designer.vb">
+      <DependentUpon>Form Report Crew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form Report Crew.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form Report Customer.Designer.vb">
       <DependentUpon>Form Report Customer.vb</DependentUpon>
     </Compile>
@@ -167,6 +173,12 @@
       <DependentUpon>Form Report Data Crew.vb</DependentUpon>
     </Compile>
     <Compile Include="Form Report Data Crew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Report Kursi.Designer.vb">
+      <DependentUpon>Form Report Kursi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form Report Kursi.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form Report Movie.Designer.vb">
@@ -288,6 +300,12 @@
       <DependentUpon>Report Data Crew.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Report ID Card Crew Viewer.Designer.vb">
+      <DependentUpon>Report ID Card Crew Viewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Report ID Card Crew Viewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Report ID Card Crew.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -298,6 +316,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Report ID Card.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report Kursi.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report Kursi.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Report Movie.vb">
@@ -341,11 +365,17 @@
     <EmbeddedResource Include="Find ID Card.resx">
       <DependentUpon>Find ID Card.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form Report Crew.resx">
+      <DependentUpon>Form Report Crew.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form Report Customer.resx">
       <DependentUpon>Form Report Customer.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form Report Data Crew.resx">
       <DependentUpon>Form Report Data Crew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Report Kursi.resx">
+      <DependentUpon>Form Report Kursi.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form Report Movie.resx">
       <DependentUpon>Form Report Movie.vb</DependentUpon>
@@ -404,6 +434,9 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>Report Data Crew.vb</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Report ID Card Crew Viewer.resx">
+      <DependentUpon>Report ID Card Crew Viewer.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Report ID Card Crew.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>Report ID Card Crew.vb</LastGenOutput>
@@ -411,6 +444,10 @@
     <EmbeddedResource Include="Report ID Card.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>Report ID Card.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report Kursi.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report Kursi.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Report Movie.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>

@@ -44,6 +44,8 @@ Partial Class Main_Menu
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btn_exit = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.ReportKursiToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportCrewTicketingToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -53,7 +55,7 @@ Partial Class Main_Menu
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.InputDataToolStripMenuItem, Me.TransaksiToolStripMenuItem, Me.QRCodeToolStripMenuItem1, Me.ReportToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(406, 27)
+        Me.MenuStrip1.Size = New System.Drawing.Size(414, 27)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -137,7 +139,7 @@ Partial Class Main_Menu
         '
         'ReportToolStripMenuItem
         '
-        Me.ReportToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FindIDCardToolStripMenuItem, Me.PeriodikDataCrewToolStripMenuItem, Me.ReportCustomerToolStripMenuItem, Me.ReportMovieToolStripMenuItem})
+        Me.ReportToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FindIDCardToolStripMenuItem, Me.PeriodikDataCrewToolStripMenuItem, Me.ReportCustomerToolStripMenuItem, Me.ReportMovieToolStripMenuItem, Me.ReportKursiToolStripMenuItem, Me.ReportCrewTicketingToolStripMenuItem})
         Me.ReportToolStripMenuItem.Font = New System.Drawing.Font("Century Schoolbook", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ReportToolStripMenuItem.Name = "ReportToolStripMenuItem"
         Me.ReportToolStripMenuItem.Size = New System.Drawing.Size(79, 23)
@@ -146,7 +148,7 @@ Partial Class Main_Menu
         'FindIDCardToolStripMenuItem
         '
         Me.FindIDCardToolStripMenuItem.Name = "FindIDCardToolStripMenuItem"
-        Me.FindIDCardToolStripMenuItem.Size = New System.Drawing.Size(244, 24)
+        Me.FindIDCardToolStripMenuItem.Size = New System.Drawing.Size(270, 24)
         Me.FindIDCardToolStripMenuItem.Text = "Find ID Card"
         '
         'PeriodikDataCrewToolStripMenuItem
@@ -197,11 +199,23 @@ Partial Class Main_Menu
         Me.PictureBox1.TabIndex = 3
         Me.PictureBox1.TabStop = False
         '
+        'ReportKursiToolStripMenuItem
+        '
+        Me.ReportKursiToolStripMenuItem.Name = "ReportKursiToolStripMenuItem"
+        Me.ReportKursiToolStripMenuItem.Size = New System.Drawing.Size(244, 24)
+        Me.ReportKursiToolStripMenuItem.Text = "Report Kursi"
+        '
+        'ReportCrewTicketingToolStripMenuItem
+        '
+        Me.ReportCrewTicketingToolStripMenuItem.Name = "ReportCrewTicketingToolStripMenuItem"
+        Me.ReportCrewTicketingToolStripMenuItem.Size = New System.Drawing.Size(270, 24)
+        Me.ReportCrewTicketingToolStripMenuItem.Text = "Report Crew Ticketing"
+        '
         'Main_Menu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(406, 336)
+        Me.ClientSize = New System.Drawing.Size(414, 336)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.btn_exit)
         Me.Controls.Add(Me.Label1)
@@ -238,4 +252,6 @@ Partial Class Main_Menu
     Friend WithEvents ReportCustomerToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ReportMovieToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ReceiptBioskopToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ReportKursiToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ReportCrewTicketingToolStripMenuItem As ToolStripMenuItem
 End Class
