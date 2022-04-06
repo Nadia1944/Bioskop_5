@@ -41,11 +41,12 @@ Partial Class Main_Menu
         Me.PeriodikDataCrewToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReportCustomerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReportMovieToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportKursiToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportCrewTicketingToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btn_exit = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.ReportKursiToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ReportCrewTicketingToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportReceiptToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -139,7 +140,7 @@ Partial Class Main_Menu
         '
         'ReportToolStripMenuItem
         '
-        Me.ReportToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FindIDCardToolStripMenuItem, Me.PeriodikDataCrewToolStripMenuItem, Me.ReportCustomerToolStripMenuItem, Me.ReportMovieToolStripMenuItem, Me.ReportKursiToolStripMenuItem, Me.ReportCrewTicketingToolStripMenuItem})
+        Me.ReportToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FindIDCardToolStripMenuItem, Me.PeriodikDataCrewToolStripMenuItem, Me.ReportCustomerToolStripMenuItem, Me.ReportMovieToolStripMenuItem, Me.ReportKursiToolStripMenuItem, Me.ReportCrewTicketingToolStripMenuItem, Me.ReportReceiptToolStripMenuItem})
         Me.ReportToolStripMenuItem.Font = New System.Drawing.Font("Century Schoolbook", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ReportToolStripMenuItem.Name = "ReportToolStripMenuItem"
         Me.ReportToolStripMenuItem.Size = New System.Drawing.Size(79, 23)
@@ -154,20 +155,32 @@ Partial Class Main_Menu
         'PeriodikDataCrewToolStripMenuItem
         '
         Me.PeriodikDataCrewToolStripMenuItem.Name = "PeriodikDataCrewToolStripMenuItem"
-        Me.PeriodikDataCrewToolStripMenuItem.Size = New System.Drawing.Size(244, 24)
+        Me.PeriodikDataCrewToolStripMenuItem.Size = New System.Drawing.Size(270, 24)
         Me.PeriodikDataCrewToolStripMenuItem.Text = "Periodik Data Crew"
         '
         'ReportCustomerToolStripMenuItem
         '
         Me.ReportCustomerToolStripMenuItem.Name = "ReportCustomerToolStripMenuItem"
-        Me.ReportCustomerToolStripMenuItem.Size = New System.Drawing.Size(244, 24)
+        Me.ReportCustomerToolStripMenuItem.Size = New System.Drawing.Size(270, 24)
         Me.ReportCustomerToolStripMenuItem.Text = "Report Customer"
         '
         'ReportMovieToolStripMenuItem
         '
         Me.ReportMovieToolStripMenuItem.Name = "ReportMovieToolStripMenuItem"
-        Me.ReportMovieToolStripMenuItem.Size = New System.Drawing.Size(244, 24)
+        Me.ReportMovieToolStripMenuItem.Size = New System.Drawing.Size(270, 24)
         Me.ReportMovieToolStripMenuItem.Text = "Report Movie"
+        '
+        'ReportKursiToolStripMenuItem
+        '
+        Me.ReportKursiToolStripMenuItem.Name = "ReportKursiToolStripMenuItem"
+        Me.ReportKursiToolStripMenuItem.Size = New System.Drawing.Size(270, 24)
+        Me.ReportKursiToolStripMenuItem.Text = "Report Kursi"
+        '
+        'ReportCrewTicketingToolStripMenuItem
+        '
+        Me.ReportCrewTicketingToolStripMenuItem.Name = "ReportCrewTicketingToolStripMenuItem"
+        Me.ReportCrewTicketingToolStripMenuItem.Size = New System.Drawing.Size(270, 24)
+        Me.ReportCrewTicketingToolStripMenuItem.Text = "Report Crew Ticketing"
         '
         'Label1
         '
@@ -199,17 +212,11 @@ Partial Class Main_Menu
         Me.PictureBox1.TabIndex = 3
         Me.PictureBox1.TabStop = False
         '
-        'ReportKursiToolStripMenuItem
+        'ReportReceiptToolStripMenuItem
         '
-        Me.ReportKursiToolStripMenuItem.Name = "ReportKursiToolStripMenuItem"
-        Me.ReportKursiToolStripMenuItem.Size = New System.Drawing.Size(244, 24)
-        Me.ReportKursiToolStripMenuItem.Text = "Report Kursi"
-        '
-        'ReportCrewTicketingToolStripMenuItem
-        '
-        Me.ReportCrewTicketingToolStripMenuItem.Name = "ReportCrewTicketingToolStripMenuItem"
-        Me.ReportCrewTicketingToolStripMenuItem.Size = New System.Drawing.Size(270, 24)
-        Me.ReportCrewTicketingToolStripMenuItem.Text = "Report Crew Ticketing"
+        Me.ReportReceiptToolStripMenuItem.Name = "ReportReceiptToolStripMenuItem"
+        Me.ReportReceiptToolStripMenuItem.Size = New System.Drawing.Size(270, 24)
+        Me.ReportReceiptToolStripMenuItem.Text = "Report Receipt"
         '
         'Main_Menu
         '
@@ -254,4 +261,5 @@ Partial Class Main_Menu
     Friend WithEvents ReceiptBioskopToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ReportKursiToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ReportCrewTicketingToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ReportReceiptToolStripMenuItem As ToolStripMenuItem
 End Class

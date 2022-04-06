@@ -572,7 +572,7 @@ Partial Class Receipt_Bioskop
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(915, 414)
+        Me.ClientSize = New System.Drawing.Size(680, 435)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)

@@ -187,6 +187,12 @@
     <Compile Include="Form Report Movie.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Form Report Receipt.Designer.vb">
+      <DependentUpon>Form Report Receipt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form Report Receipt.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -379,6 +385,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form Report Movie.resx">
       <DependentUpon>Form Report Movie.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Report Receipt.resx">
+      <DependentUpon>Form Report Receipt.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>

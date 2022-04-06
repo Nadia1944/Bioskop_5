@@ -95,3 +95,7 @@ C:\Users\Anggis\Documents\S M T R  6 ! !\Prak APSI\Bioskop_5\SI_Bioskop\SI_Biosk
 C:\Users\Anggis\Documents\S M T R  6 ! !\Prak APSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\x64\Debug\SI_Bioskop.Interval_Data_Crew.resources
 C:\Users\Anggis\Documents\S M T R  6 ! !\Prak APSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\x64\Debug\SI_Bioskop.Print_Ticket.resources
 C:\Users\Anggis\Documents\S M T R  6 ! !\Prak APSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\x64\Debug\SI_Bioskop.Receipt_Bioskop.resources
+C:\Users\Anggis\Documents\S M T R  6 ! !\Prak APSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\x64\Debug\SI_Bioskop.Form_Report_Crew.resources
+C:\Users\Anggis\Documents\S M T R  6 ! !\Prak APSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\x64\Debug\SI_Bioskop.Form_Report_Kursi.resources
+C:\Users\Anggis\Documents\S M T R  6 ! !\Prak APSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\x64\Debug\SI_Bioskop.Report_ID_Card_Crew_Viewer.resources
+C:\Users\Anggis\Documents\S M T R  6 ! !\Prak APSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\obj\x64\Debug\SI_Bioskop.Form_Report_Receipt.resources

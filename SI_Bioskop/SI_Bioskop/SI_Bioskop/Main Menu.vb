@@ -62,4 +62,8 @@
     Private Sub ReportCrewTicketingToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ReportCrewTicketingToolStripMenuItem.Click
         Form_Report_Crew.Show()
     End Sub
+
+    Private Sub ReportReceiptToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ReportReceiptToolStripMenuItem.Click
+        ' Form_Report_Receipt.Show()
+    End Sub
 End Class
