@@ -33,24 +33,35 @@ Public Class QR_Code_reader_Webcam
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        'Try
-        '    StopWebcam()
-        '    Reader = New QRCodeDecoder
-        '    TextBox1.Text = Reader.decode(New Data.QRCodeBitmapImage(PictureBox1.Image))
-        '    MsgBox("QR code is detected!")
-        'Catch ex As Exception
-        '    MsgBox(ex.ToString)
-        'End Try
+        Dim Scanner = New BarcodeDecoder
+        Dim result As Result
         Try
-            StopWebcam()
-            Reader = New QRCodeDecoder
-            TextBox1.Text = Reader.decode(New Data.QRCodeBitmapImage(PictureBox1.Image))
-            MsgBox("Data Terbaca")
+            'Stop disini berfungsi untuk berhenti sementara (pause) dari webcam
+            Mywebcam.Stop()
+            'result adalah hasil scan
+            'decode untuk mengubah hasil barcode ke hasil scan non string
+            result = Scanner.Decode(New Bitmap(PictureBox1.Image))
+            If result IsNot Nothing Then
+                'decoded untuk konversi hasil scan ke string. Trim untuk menghapus spasi di awal dan akhir string (bukan diantara)
+                Dim decoded As String
+                decoded = result.ToString().Trim
+                MsgBox(decoded)
+                'REPORT TRANSAKSI --> FORM REPORT RECEIPT
+                If Application.OpenForms().OfType(Of Report_Receipt).Any Then
+                    Form_Report_Receipt.ComboBox1.Text = decoded
+                End If
+                TextBox1.Text = decoded
+            ElseIf result Is Nothing Then
+                MsgBox("Silahkan coba kembali")
+                'start untuk memulai kembali webcam (unpause)
+                StartWebCam()
+            End If
         Catch ex As Exception
+            MsgBox("Silahkan coba kembali")
+            'start untuk memulai kembali webcam (unpause)
             StartWebCam()
         End Try
     End Sub
-
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         'Dim Scanner As New MessagingToolkit.Barcode.BarcodeDecoder
         'Dim result As MessagingToolkit.Barcode.Result
