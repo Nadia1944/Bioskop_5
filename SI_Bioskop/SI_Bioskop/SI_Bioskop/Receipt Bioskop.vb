@@ -208,7 +208,7 @@
                 Exit Sub
             End If
 
-            Dim simpanreceipt As String = $"Insert into Receipt values('{txtidreceipt.Text}','{txtidcust.Text}','{txtnamacust.Text}','{txtnamacrew.Text}','{tgltransaksi.Value.ToString()}','{jamtransaksi.Value.ToString()}','{txtgrandtotal.Text}','{txtitems.Text}','{txtbayar.Text}','{txtchange.Text}','{lokasiBR}')"
+            Dim simpanreceipt As String = $"Insert into Receipt values('{txtidreceipt.Text}','{txtidcust.Text}','{txtidcrew.Text}','{txtnamacust.Text}','{txtnamacrew.Text}','{tgltransaksi.Value.ToString()}','{jamtransaksi.Value.ToString()}','{txtgrandtotal.Text}','{txtitems.Text}','{txtbayar.Text}','{txtchange.Text}','{lokasiBR}')"
             '$"insert into Ticket values ('{nama textbox-nya}', '{nama textbox-nya}')"
             CMD = New OleDb.OleDbCommand(simpanreceipt, Conn)
             CMD.ExecuteNonQuery()
