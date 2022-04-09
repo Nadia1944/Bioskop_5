@@ -437,7 +437,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Report Customer.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>Report Customer.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Report Data Crew.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>

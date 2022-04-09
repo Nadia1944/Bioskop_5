@@ -1,7 +1,7 @@
 ﻿Imports CrystalDecisions.CrystalReports.Engine
 
 Public Class Form_Report_Receipt
-    Public Form_Report_Receipt As New ReportDocument
+    Public ReportReceipt As New ReportDocument
     'isi nomor faktur otomatis berdasarkan Access
     Sub nofaktur()
         Call koneksiDB()
@@ -21,9 +21,9 @@ Public Class Form_Report_Receipt
     End Sub
     'Load form
     Private Sub Form_Report_Receipt_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Form_Report_Receipt.Load("C:\Users\Anggis\Documents\S M T R  6 ! !\Prak APSI\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\Report Receipt.rpt")
-        Form_Report_Receipt.RecordSelectionFormula = ""
-        CrystalReportViewer1.ReportSource = Form_Report_Receipt
+        ReportReceipt.Load("C:\Users\ASUS\Music\Bioskop_5\SI_Bioskop\SI_Bioskop\SI_Bioskop\Report Receipt.rpt")
+        ReportReceipt.RecordSelectionFormula = ""
+        CrystalReportViewer1.ReportSource = ReportReceipt
         Call nofaktur()
     End Sub
 
@@ -32,7 +32,7 @@ Public Class Form_Report_Receipt
 ComboBox1.Text & "'"
         CrystalReportViewer1.ReportSource = Nothing
         CrystalReportViewer1.RefreshReport()
-        CrystalReportViewer1.ReportSource = Form_Report_Receipt
+        CrystalReportViewer1.ReportSource = ReportReceipt
         CrystalReportViewer1.RefreshReport()
     End Sub
 
