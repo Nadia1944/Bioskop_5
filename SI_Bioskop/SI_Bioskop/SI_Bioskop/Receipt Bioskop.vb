@@ -208,7 +208,7 @@
                 Exit Sub
             End If
 
-            Dim simpanreceipt As String = $"Insert into Receipt values('{txtidreceipt.Text}','{txtidcust.Text}','{txtidcrew.Text}','{txtnamacust.Text}','{txtnamacrew.Text}','{tgltransaksi.Value.ToString()}','{jamtransaksi.Value.ToString()}','{txtgrandtotal.Text}','{txtitems.Text}','{txtbayar.Text}','{txtchange.Text}','{lokasiBR}')"
+            Dim simpanreceipt As String = $"Insert into Receipt values('{txtidreceipt.Text}','{txtidcust.Text}','{txtnamacust.Text}','{txtidcrew.Text}','{txtnamacrew.Text}','{tgltransaksi.Value.ToString()}','{jamtransaksi.Value.ToString()}','{txtgrandtotal.Text}','{txtitems.Text}','{txtbayar.Text}','{txtchange.Text}','{lokasiBR}')"
             '$"insert into Ticket values ('{nama textbox-nya}', '{nama textbox-nya}')"
             CMD = New OleDb.OleDbCommand(simpanreceipt, Conn)
             CMD.ExecuteNonQuery()
@@ -241,15 +241,11 @@
                 'Coding ini maksudnya , stok barang akan dikurangi sesuai dengan jumlah barang yang sudah terjual
             Next
             MsgBox("Receipt Telah Tersimpan")
+            Print_Ticket.Report_Ticket1.SetParameterValue("ID Receipt", txtidreceipt.Text)
+            Print_Ticket.Show()
             Call bersihkanform()
             Call kondisiawal()
             Call Nomorfakturotomatis()
-            Print_Ticket.Show()
-            'Report_Ticket1.SelectionFormula = "totext ({Detail_Receipt.ID_Receipt})= '" & txtidreceipt.Text & "'"
-            'Report_Ticket1.ReportSource = Nothing
-            'Report_Ticket1.RefreshReport()
-            'Report_Ticket1.ReportSource = LaporanBuku_Tglmasuk3
-            'Report_Ticket1.RefreshReport()
         End If
     End Sub
 
