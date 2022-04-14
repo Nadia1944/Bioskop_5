@@ -282,12 +282,6 @@
     <Compile Include="Receipt Bioskop.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Receipt.Designer.vb">
-      <DependentUpon>Receipt.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Receipt.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Report Crew.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -427,9 +421,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Receipt Bioskop.resx">
       <DependentUpon>Receipt Bioskop.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Receipt.resx">
-      <DependentUpon>Receipt.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Report Crew.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>

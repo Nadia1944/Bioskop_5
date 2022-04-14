@@ -30,7 +30,6 @@ Partial Class Main_Menu
         Me.DataCrewToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DataKursiToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TransaksiToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ReceiptToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReceiptBioskopToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.QRCodeToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.QRCodeGeneratorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -43,10 +42,10 @@ Partial Class Main_Menu
         Me.ReportMovieToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReportKursiToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReportCrewTicketingToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportReceiptToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btn_exit = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.ReportReceiptToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -94,17 +93,11 @@ Partial Class Main_Menu
         '
         'TransaksiToolStripMenuItem
         '
-        Me.TransaksiToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ReceiptToolStripMenuItem1, Me.ReceiptBioskopToolStripMenuItem})
+        Me.TransaksiToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ReceiptBioskopToolStripMenuItem})
         Me.TransaksiToolStripMenuItem.Font = New System.Drawing.Font("Century Schoolbook", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TransaksiToolStripMenuItem.Name = "TransaksiToolStripMenuItem"
         Me.TransaksiToolStripMenuItem.Size = New System.Drawing.Size(105, 23)
         Me.TransaksiToolStripMenuItem.Text = "Transaksi"
-        '
-        'ReceiptToolStripMenuItem1
-        '
-        Me.ReceiptToolStripMenuItem1.Name = "ReceiptToolStripMenuItem1"
-        Me.ReceiptToolStripMenuItem1.Size = New System.Drawing.Size(215, 24)
-        Me.ReceiptToolStripMenuItem1.Text = "Receipt"
         '
         'ReceiptBioskopToolStripMenuItem
         '
@@ -182,6 +175,12 @@ Partial Class Main_Menu
         Me.ReportCrewTicketingToolStripMenuItem.Size = New System.Drawing.Size(270, 24)
         Me.ReportCrewTicketingToolStripMenuItem.Text = "Report Crew Ticketing"
         '
+        'ReportReceiptToolStripMenuItem
+        '
+        Me.ReportReceiptToolStripMenuItem.Name = "ReportReceiptToolStripMenuItem"
+        Me.ReportReceiptToolStripMenuItem.Size = New System.Drawing.Size(270, 24)
+        Me.ReportReceiptToolStripMenuItem.Text = "Report Receipt"
+        '
         'Label1
         '
         Me.Label1.AutoSize = True
@@ -212,12 +211,6 @@ Partial Class Main_Menu
         Me.PictureBox1.TabIndex = 3
         Me.PictureBox1.TabStop = False
         '
-        'ReportReceiptToolStripMenuItem
-        '
-        Me.ReportReceiptToolStripMenuItem.Name = "ReportReceiptToolStripMenuItem"
-        Me.ReportReceiptToolStripMenuItem.Size = New System.Drawing.Size(270, 24)
-        Me.ReportReceiptToolStripMenuItem.Text = "Report Receipt"
-        '
         'Main_Menu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -244,7 +237,6 @@ Partial Class Main_Menu
     Friend WithEvents DataCustomerToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents DataCrewToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents TransaksiToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ReceiptToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents Label1 As Label
     Friend WithEvents btn_exit As Button
     Friend WithEvents PictureBox1 As PictureBox
