@@ -294,22 +294,15 @@
       <DependentUpon>Report Customer.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Report Customer1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report Customer.rpt</DependentUpon>
+    </Compile>
     <Compile Include="Report Data Crew.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Report Data Crew.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Report ID Card Crew Viewer.Designer.vb">
-      <DependentUpon>Report ID Card Crew Viewer.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Report ID Card Crew Viewer.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Report ID Card Crew.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Report ID Card Crew.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Report ID Card.vb">
@@ -328,12 +321,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Report Movie.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Report Periodik Crew.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Report Periodik Crew.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Report Receipt.vb">
@@ -428,17 +415,11 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Report Customer.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report Customer1.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Report Data Crew.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>Report Data Crew.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Report ID Card Crew Viewer.resx">
-      <DependentUpon>Report ID Card Crew Viewer.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Report ID Card Crew.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>Report ID Card Crew.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Report ID Card.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
@@ -451,10 +432,6 @@
     <EmbeddedResource Include="Report Movie.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>Report Movie.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Report Periodik Crew.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>Report Periodik Crew.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Report Receipt.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>

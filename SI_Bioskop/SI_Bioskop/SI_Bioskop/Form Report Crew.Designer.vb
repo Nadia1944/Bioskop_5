@@ -35,14 +35,14 @@ Partial Class Form_Report_Crew
         Me.CrystalReportViewer1.Location = New System.Drawing.Point(0, 0)
         Me.CrystalReportViewer1.Name = "CrystalReportViewer1"
         Me.CrystalReportViewer1.ReportSource = Me.Report_Crew1
-        Me.CrystalReportViewer1.Size = New System.Drawing.Size(779, 311)
+        Me.CrystalReportViewer1.Size = New System.Drawing.Size(779, 410)
         Me.CrystalReportViewer1.TabIndex = 0
         '
         'Form_Report_Crew
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(779, 311)
+        Me.ClientSize = New System.Drawing.Size(779, 410)
         Me.Controls.Add(Me.CrystalReportViewer1)
         Me.Name = "Form_Report_Crew"
         Me.Text = "Form_Report_Crew"
