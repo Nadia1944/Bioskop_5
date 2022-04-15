@@ -64,7 +64,8 @@
             Exit Sub
         Else
             Call koneksiDB()
-            CMD = New OleDb.OleDbCommand("update Kursi set Stok = '" & Stok.Text & "', Studio = '" & Studio.Text & "' where ID_Kusi ='" & Id_kursi.Text & "'", Conn)
+            CMD = New OleDb.OleDbCommand("update Kursi set Stok = '" & Stok.Text & "', Studio = '" & Studio.Text &
+            "' where ID_Kursi ='" & Id_kursi.Text & "'", Conn)
             DM = CMD.ExecuteReader
             MsgBox("Update Data Berhasil")
         End If
