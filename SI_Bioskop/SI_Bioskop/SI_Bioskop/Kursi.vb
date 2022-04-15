@@ -64,8 +64,7 @@
             Exit Sub
         Else
             Call koneksiDB()
-            CMD = New OleDb.OleDbCommand("update Kursi set Stok = '" &
-           Stok.Text & "', Studio = '" & Studio.Text & "' where ID_Kusi ='" & Id_kursi.Text & "'", Conn)
+            CMD = New OleDb.OleDbCommand("update Kursi set Stok = '" & Stok.Text & "', Studio = '" & Studio.Text & "' where ID_Kusi ='" & Id_kursi.Text & "'", Conn)
             DM = CMD.ExecuteReader
             MsgBox("Update Data Berhasil")
         End If
@@ -101,5 +100,14 @@
 
     Private Sub btn_Exit_Click(sender As Object, e As EventArgs) Handles btn_Exit.Click
         Me.Close()
+    End Sub
+
+    Private Sub DGV_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DGV.CellContentClick
+        On Error Resume Next
+        Id_kursi.Text = DGV.Rows(e.RowIndex).Cells(0).Value
+        Stok.Text = DGV.Rows(e.RowIndex).Cells(1).Value
+        Studio.Text = DGV.Rows(e.RowIndex).Cells(2).Value
+        Call HidupkanForm()
+        Id_kursi.Enabled = False
     End Sub
 End Class

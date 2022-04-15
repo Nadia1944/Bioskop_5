@@ -193,13 +193,6 @@
     <Compile Include="Form Report Receipt.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="ID Card Form.Designer.vb">
       <DependentUpon>ID Card Form.vb</DependentUpon>
     </Compile>
@@ -288,12 +281,6 @@
       <DependentUpon>Report Crew.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Report Customer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Report Customer.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="Report Customer1.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -369,9 +356,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form Report Receipt.resx">
       <DependentUpon>Form Report Receipt.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ID Card Form.resx">
       <DependentUpon>ID Card Form.vb</DependentUpon>

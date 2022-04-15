@@ -2,22 +2,22 @@
     Sub KosongkanForm()
         txt_idcustomer.Text = ""
         txt_namacustomer.Text = ""
-        txt_hp.Text = ""
         cmb_jk.Text = ""
+        txt_hp.Text = ""
         txt_alamat.Text = ""
     End Sub
     Sub MatikanForm()
         txt_idcustomer.Enabled = False
         txt_namacustomer.Enabled = False
-        txt_hp.Enabled = False
         cmb_jk.Enabled = False
+        txt_hp.Enabled = False
         txt_alamat.Enabled = False
     End Sub
     Sub HidupkanForm()
         txt_idcustomer.Enabled = True
         txt_namacustomer.Enabled = True
-        txt_hp.Enabled = True
         cmb_jk.Enabled = True
+        txt_hp.Enabled = True
         txt_alamat.Enabled = True
     End Sub
     Sub TampilkanData()
