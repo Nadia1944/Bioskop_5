@@ -285,11 +285,10 @@ Partial Class Movie
         '
         Me.lblwelcome.AutoSize = True
         Me.lblwelcome.Font = New System.Drawing.Font("Modern No. 20", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblwelcome.Location = New System.Drawing.Point(121, 6)
+        Me.lblwelcome.Location = New System.Drawing.Point(121, 2)
         Me.lblwelcome.Name = "lblwelcome"
-        Me.lblwelcome.Size = New System.Drawing.Size(114, 29)
+        Me.lblwelcome.Size = New System.Drawing.Size(0, 29)
         Me.lblwelcome.TabIndex = 62
-        Me.lblwelcome.Text = "Welcome"
         '
         'Label8
         '

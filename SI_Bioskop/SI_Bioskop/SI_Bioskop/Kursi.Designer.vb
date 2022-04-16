@@ -108,11 +108,11 @@ Partial Class Kursi
         'GroupBox2
         '
         Me.GroupBox2.Controls.Add(Me.DGV)
-        Me.GroupBox2.Location = New System.Drawing.Point(28, 247)
+        Me.GroupBox2.Location = New System.Drawing.Point(252, 29)
         Me.GroupBox2.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Padding = New System.Windows.Forms.Padding(2)
-        Me.GroupBox2.Size = New System.Drawing.Size(311, 114)
+        Me.GroupBox2.Size = New System.Drawing.Size(311, 296)
         Me.GroupBox2.TabIndex = 4
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Detail Data Kursi"
@@ -124,7 +124,7 @@ Partial Class Kursi
         Me.DGV.Margin = New System.Windows.Forms.Padding(2)
         Me.DGV.Name = "DGV"
         Me.DGV.RowTemplate.Height = 28
-        Me.DGV.Size = New System.Drawing.Size(281, 87)
+        Me.DGV.Size = New System.Drawing.Size(281, 264)
         Me.DGV.TabIndex = 0
         '
         'GroupBox1
@@ -201,9 +201,9 @@ Partial Class Kursi
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(363, 29)
+        Me.PictureBox1.Location = New System.Drawing.Point(580, 29)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(411, 311)
+        Me.PictureBox1.Size = New System.Drawing.Size(406, 296)
         Me.PictureBox1.TabIndex = 6
         Me.PictureBox1.TabStop = False
         '
@@ -211,7 +211,7 @@ Partial Class Kursi
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(794, 374)
+        Me.ClientSize = New System.Drawing.Size(1018, 348)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.btn_Exit)
         Me.Controls.Add(Me.btn_Cancel)

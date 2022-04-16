@@ -243,6 +243,7 @@
             MsgBox("Receipt Telah Tersimpan")
             Print_Ticket.Report_Ticket1.SetParameterValue("ID Receipt", txtidreceipt.Text)
             Print_Ticket.Show()
+            Form_Report_Receipt.Show()
             Call bersihkanform()
             Call kondisiawal()
             Call Nomorfakturotomatis()
